@@ -1,0 +1,36 @@
+<div *ngIf="showSplash" class="splash">
+    <div class="sk-folding-cube">
+        <div class="sk-cube1 sk-cube"></div>
+        <div class="sk-cube2 sk-cube"></div>
+        <div class="sk-cube4 sk-cube"></div>
+        <div class="sk-cube3 sk-cube"></div>
+      </div>
+</div>
+
+
+
+<ion-menu [content]="content" persistent="true">
+  <!--<ion-header >
+    <ion-toolbar >
+      <ion-title >Fresher Interview Guide</ion-title>
+    </ion-toolbar>
+  </ion-header>
+-->
+  <ion-content class="scroll-content" class="bg-color" > 
+    
+      <img src="assets/imgs/side1.png" width="303px" height="140px">
+    <!--  <div class="myOverlay">FRESHER  INTERVIEW
+      </div>-->
+    <ion-list class="bg-color1" no-lines>
+      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+        {{p.title}}
+      </button>
+     
+    </ion-list>
+    
+  </ion-content>
+
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

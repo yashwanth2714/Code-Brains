@@ -1,0 +1,675 @@
+<!--
+  Generated template for the HadooptheoryPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-navbar color="ownclr">
+      <button ion-button menuToggle  icon-only end side="right">
+          <ion-icon name="menu"></ion-icon>
+        </button>
+      <ion-title>Hadoop Interview Questions</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+  
+  
+  <ion-content style="background-color: rgb(233, 233, 240)">
+      
+            <ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+              <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+            What does ‘jps’ command do?
+          </ion-card-header>
+          <ion-card-content style="font-size: 14px">
+It gives the status of the deamons which run Hadoop cluster. It gives the output mentioning the status of namenode, datanode , secondary namenode, Jobtracker and Task tracker.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+How to restart Namenode?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+Step-1. Click on stop-all.sh and then click on start-all.sh OR
+<br><br>
+Step-2. Write sudo hdfs (press enter), su-hdfs (press enter), /etc/init.d/ha (press enter) and then /etc/init.d/hadoop-0.20-namenode start (press enter).
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which are the three modes in which<br> Hadoop can be run?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The three modes in which Hadoop can be run are −
+<br><br>
+standalone (local) mode
+<br>
+Pseudo-distributed mode
+<br>
+Fully distributed mode
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What does /etc /init.d do?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+/etc /init.d specifies where daemons (services) are placed or to see the status of these daemons. It is very LINUX specific, and nothing to do with Hadoop.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What if a Namenode has no data?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+It cannot be part of the Hadoop cluster.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What happens to job tracker when<br> Namenode is down?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+When Namenode is down, your cluster is OFF, this is because Namenode is the single point of failure in HDFS.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What is Big Data?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+Big Data is nothing but an assortment of such a huge and complex data that it becomes very tedious to capture, store, process, retrieve and analyze it with the help of on-hand database management tools or traditional data processing techniques.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What are the three characteristics of<br> Big Data?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The three characteristics of Big Data are − 
+<br><br>
+Volume − Facebook generating 500+ terabytes of data per day.
+<br><br>
+Velocity − Analyzing 2 million records each day to identify the reason for losses.
+<br><br>
+Variety − images, audio, video, sensor data, log files, etc.  Veracity: biases, noise and abnormality in data
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+How is analysis of Big Data useful<br> for organizations?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+Effective analysis of Big Data provides a lot of business advantage as organizations will learn which areas to focus on and which areas are less important.
+<br><br>
+Big data analysis provides some early key indicators that can prevent the company from a huge loss or help in grasping a great opportunity with open hands! A precise analysis of Big Data helps in decision making! For instance, nowadays people rely so much on Facebook and Twitter before buying any product or service. All thanks to the Big Data explosion.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Why do we need Hadoop?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+Everyday a large amount of unstructured data is getting dumped into our machines. The major challenge is not to store large data sets in our systems but to retrieve and analyze the big data in the organizations, that too data present in different machines at different locations. In this situation a necessity for Hadoop arises.
+<br><br>
+Hadoop has the ability to analyze the data present in different machines at different locations very quickly and in a very cost effective way. It uses the concept of MapReduce which enables it to divide the query into small parts and process them in parallel. This is also known as parallel computing.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What is the basic difference between<br> traditional RDBMS and Hadoop?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+Traditional RDBMS is used for transactional systems to report and archive the data, whereas Hadoop is an approach to store huge amount of data in the distributed file system and process it.
+<br><br>
+RDBMS will be useful when you want to seek one record from Big data, whereas, Hadoop will be useful when you want Big data in one shot and perform analysis on that later
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What is a Namenode?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+Namenode is the master node on which job tracker runs and consists of the metadata. It maintains and manages the blocks which are present on the datanodes. It is a high-availability machine and single point of failure in HDFS.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Is Namenode also a commodity hardware?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+No. Namenode can never be commodity hardware because the entire HDFS rely on it. It is the single point of failure in HDFS. Namenode has to be a high-availability machine.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What is a Datanode?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+Datanodes are the slaves which are deployed on each machine and provide the actual storage. These are responsible for serving read and write requests for the clients.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Why do we use HDFS for applications<br> having large data sets and not<br> when there are lot of small files?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+HDFS is more suitable for large amount of data sets in a single file as compared to small amount of data spread across multiple files. This is because Namenode is a very expensive high performance system, so it is not prudent to occupy the space in the Namenode by unnecessary amount of metadata that is generated for multiple small files.
+<br><br>
+So, when there is a large amount of data in a single file, name node will occupy less space. Hence for getting optimized performance, HDFS supports large data sets instead of multiple small files.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What is a job tracker?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+Job tracker is a daemon that runs on a namenode for submitting and tracking MapReduce jobs in Hadoop. It assigns the tasks to the different task tracker. In a Hadoop cluster, there will be only one job tracker but many task trackers. It is the single point of failure for Hadoop and MapReduce Service.
+<br><br>
+If the job tracker goes down all the running jobs are halted. It receives heartbeat from task tracker based on which Job tracker decides whether the assigned task is completed or not.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What is a task tracker?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+Task tracker is also a daemon that runs on datanodes. Task Trackers manage the execution of individual tasks on slave node. When a client submits a job, the job tracker will initialize the job and divide the work and assign them to different task trackers to perform MapReduce tasks.
+<br><br>
+While performing this action, the task tracker will be simultaneously communicating with job tracker by sending heartbeat. If the job tracker does not receive heartbeat from task tracker within specified time, then it will assume that task tracker has crashed and assign that task to another task tracker in the cluster.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What is a heartbeat in HDFS?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+A heartbeat is a signal indicating that it is alive. A datanode sends heartbeat to Namenode and task tracker will send its heart beat to job tracker.
+<br> If the Namenode or job tracker does not receive heart beat then they will decide that there is some problem in datanode or task tracker is unable to perform the assigned task.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What is a ‘block’ in HDFS?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+A ‘block’ is the minimum amount of data that can be read or written. In HDFS, the default block size is 64 MB as contrast to the block size of 8192 bytes in Unix/Linux.
+<br><br> Files in HDFS are broken down into block-sized chunks, which are stored as independent units. HDFS blocks are large as compared to disk blocks, particularly to minimize the cost of seeks.
+<br><br>
+If a particular file is 50 mb, will the HDFS block still consume 64 mb as the default size? No, not at all! 64 mb is just a unit where the data will be stored. In this particular situation, only 50 mb will be consumed by an HDFS block and 14 mb will be free to store something else. It is the MasterNode that does data allocation in an efficient manner.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What are the benefits of block transfer?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+A file can be larger than any single disk in the network. There’s nothing that requires the blocks from a file to be stored on the same disk, so they can take advantage of any of the disks in the cluster. Making the unit of abstraction a block rather than a file simplifies the storage subsystem. Blocks provide fault tolerance and availability.
+<br><br>
+To insure against corrupted blocks and disk and machine failure, each block is replicated to a small number of physically separate machines (typically three). If a block becomes unavailable, a copy can be read from another location in a way that is transparent to the client?
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+How indexing is done in HDFS?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+Hadoop has its own way of indexing. Depending upon the block size, once the data is stored, HDFS will keep on storing the last part of the data which will say where the next part of the data will be.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Are job tracker and task trackers<br> present in separate machines?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+Yes, job tracker and task tracker are present in different machines. The reason is job tracker is a single point of failure for the Hadoop MapReduce service. If it goes down, all running jobs are halted.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What is the communication channel<br> between client and namenode/datanode?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The mode of communication is SSH.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What is a rack?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+Rack is a storage area with all the datanodes put together. These datanodes can be physically located at different places. Rack is a physical collection of datanodes which are stored at a single location. There can be multiple racks in a single location.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What is a Secondary Namenode? Is it<br> a substitute to the Namenode?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The secondary Namenode constantly reads the data from the RAM of the Namenode and writes it into the hard disk or the file system. It is not a substitute to the Namenode, so if the Namenode fails, the entire Hadoop system goes down.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Explain how do ‘map’ and ‘reduce’ works.
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+Namenode takes the input and divide it into parts and assign them to data nodes. These datanodes process the tasks assigned to them and make a key-value pair and returns the intermediate output to the Reducer.
+<br><br> The reducer collects this key value pairs of all the datanodes and combines them and generates the final output.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Why ‘Reading‘ is done in parallel<br> and ‘Writing‘ is not in HDFS?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+Through mapreduce program the file can be read by splitting its blocks when reading. But while writing as the incoming values are not yet known to the system mapreduce cannot be applied and no parallel writing is possible.
+<br><br>
+Copy a directory from one node in the cluster to another
+<br>
+Use ‘-distcp’ command to copy,<br>
+Default replication factor to a file is 3. Use ‘-setrep’ command to change replication factor of a file to 2.hadoop fs -setrep -w 2 apache_hadoop/sample.txt
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What is rack awareness?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+Rack awareness is the way in which the namenode decides how to place blocks based on the rack definitions Hadoop will try to minimize the network traffic between datanodes within the same rack and will only contact remote racks if it has to. The namenode is able to control this due to rack awareness.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which file does the Hadoop-core<br> configuration?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+core-default.xml
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Is there a hdfs command to see<br> available free space in hdfs?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+hadoop dfsadmin -report<br><br>
+The requirement is to add a new data node to a running Hadoop cluster; how do I start services on just one data node?
+<br><br>
+You do not need to shutdown and/or restart the entire cluster in this case.
+<br>
+First, add the new node's DNS name to the conf/slaves file on the master node.
+<br>
+Then log in to the new slave node and execute −
+<br><br>
+$ cd path/to/hadoop
+<br><br>
+$ bin/hadoop-daemon.sh start datanode
+<br><br>
+$ bin/hadoop-daemon.sh start tasktracker
+<br><br>
+then issuehadoop dfsadmin -refreshNodes and hadoop mradmin -refreshNodes so that the NameNode and JobTracker know of the additional node that has been added.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+How do you gracefully stop a running job?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+Hadoop job –kill jobid
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Does the name-node stay in safe mode<br> till all under-replicated files are <br>fully replicated?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+No. During safe mode replication of blocks is prohibited. The name-node awaits when all or majority of data-nodes report their blocks.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What happens if one Hadoop client<br> renames a file or a directory containing <br>this file while another client is<br> still writing into it?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+A file will appear in the name space as soon as it is created. If a writer is writing to a file and another client renames either the file itself or any of its path components, then the original writer will get an IOException either when it finishes writing to the current block or when it closes the file.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+How to make a large cluster smaller<br> by taking out some of the nodes?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+Hadoop offers the decommission feature to retire a set of existing data-nodes. The nodes to be retired should be included into the exclude file, and the exclude file name should be specified as a configuration parameter dfs.hosts.exclude.
+<br><br>
+The decommission process can be terminated at any time by editing the configuration or the exclude files and repeating the -refreshNodes command
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Can we search for files using wildcards?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+Yes.<br><br> For example, to list all the files which begin with the letter a, you could use the ls command with the * wildcard −
+<br><br>
+hdfs dfs –ls a*
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What happens when two clients try<br> to write into the same HDFS file?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+HDFS supports exclusive writes only.
+<br><br>
+When the first client contacts the name-node to open the file for writing, the name-node grants a lease to the client to create this file.
+<br><br> When the second client tries to open the same file for writing, the name-node will see that the lease for the file is already granted to another client, and will reject the open request for the second client
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What does "file could only be replicated<br> to 0 nodes, instead of 1" mean?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The namenode does not have any available DataNodes. 
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What is a Combiner?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The Combiner is a ‘mini-reduce’ process which operates only on data generated by a mapper. The Combiner will receive as input all data emitted by the Mapper instances on a given node. The output from the Combiner is then sent to the Reducers, instead of the output from the Mappers
+<br><br>
+Consider case scenario: In M/R system, - HDFS block size is 64 MB
+<br><br>
+− Input format is FileInputFormat
+<br>
+− We have 3 files of size 64K, 65Mb and 127Mb
+<br>
+− How many input splits will be made by Hadoop framework?
+<br><br>
+Hadoop will make 5 splits as follows −
+<br><br>
+- 1 split for 64K files
+<br>
+- 2 splits for 65MB files
+<br>
+- 2 splits for 127MB files<br><br>
+Suppose Hadoop spawned 100 tasks for a job and one of the task failed. What will Hadoop do?
+<br>
+It will restart the task again on some other TaskTracker and only if the task fails more than four ( the default setting and can be changed) times will it kill the job.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What are Problems with small files<br> and HDFS?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+HDFS is not good at handling large number of small files. <br><br>Because every file, directory and block in HDFS is represented as an object in the namenode’s memory, each of which occupies approx 150 bytes So 10 million files, each using a block, would use about 3 gigabytes of memory.<br> when we go for a billion files the memory requirement in namenode cannot be met.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What is speculative execution in Hadoop?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+If a node appears to be running slow, the master node can redundantly execute another instance of the same task and first output will be taken .this process is called as Speculative execution.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Can Hadoop handle streaming data?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+Yes, through Technologies like Apache Kafka, Apache Flume, and Apache Spark it is possible to do large-scale streaming.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Why is Checkpointing Important<br> in Hadoop?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+As more and more files are added the namenode creates large edit logs. Which can substantially delay NameNode startup as the NameNode reapplies all the edits.
+<br><br>
+Checkpointing is a process that takes an fsimage and edit log and compacts them into a new fsimage. This way, instead of replaying a potentially unbounded edit log, the NameNode can load the final in-memory state directly from the fsimage. <br>This is a far more efficient operation and reduces NameNode startup time.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What is Twitter Bootstrap?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+Bootstrap is a sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development. It uses HTML, CSS and Javascript.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Why use Bootstrap?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+Bootstrap can be used as −
+<br><br>
+Mobile first approach − Since Bootstrap 3, the framework consists of Mobile first styles throughout the entire library instead of in separate files.
+<br><br>
+Browser Support − It is supported by all popular browsers.
+<br><br>
+
+Easy to get started − With just the knowledge of HTML and CSS anyone can get started with Bootstrap. Also the Bootstrap official site has a good documentation.
+<br><br>
+Responsive design − Bootstrap's responsive CSS adjusts to Desktops,Tablets and Mobiles.
+<br><br>
+Provides a clean and uniform solution for building an interface for developers.
+<br>
+It contains beautiful and functional built-in components which are easy to customize.
+<br><br>
+It also provides web based customization.
+<br>
+And best of all it is an open source.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What does Bootstrap package includes?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+Bootstrap package includes −
+<br><br>
+Scaffolding − Bootstrap provides a basic structure with Grid System, link styles, background. This is is covered in detail in the section Bootstrap Basic Structure
+<br><br>
+CSS − Bootstrap comes with feature of global CSS settings, fundamental HTML elements styled and enhanced with extensible classes, and an advanced grid system. This is covered in detail in the section Bootstrap with CSS.
+<br><br>
+Components − Bootstrap contains over a dozen reusable components built to provide iconography, dropdowns, navigation, alerts, popovers, and much more. This is covered in detail in the section Layout Components.
+<br><br>
+JavaScript Plugins − Bootstrap contains over a dozen custom jQuery plugins. You can easily include them all, or one by one. This is covered in details in the section Bootstrap Plugins. 
+<br><br>
+Customize − You can customize Bootstrap's components, LESS variables, and jQuery plugins to get your very own version. 
+</ion-card-content></ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What is Bootstrap Grid System?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+Bootstrap includes a responsive, mobile first fluid grid system that appropriately scales up to 12 columns as the device or viewport size increases. It includes predefined classes for easy layout options, as well as powerful mixins for generating more semantic layouts.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What are Offset columns?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+Offsets are a useful feature for more specialized layouts. They can be used to push columns over for more spacing, for example. The .col-xs=* classes don't support offsets, but they are easily replicated by using an empty cell.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+How can you order columns in Bootstrap?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+You can easily change the order of built-in grid columns with .col-md-push-* and .col-md-pull-* modifier classes where * range from 1 to 11. 
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+How do you make images responsive?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+Bootstrap 3 allows to make the images responsive by adding a class .img-responsive to the "img" tag. This class applies max-width: 100%; and height: auto; to the image so that it scales nicely to the parent element.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Explain the typography and links<br> in Bootstrap.
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+Bootstrap sets a basic global display (background), typography, and link styles −
+<br><br>
+Basic Global display − Sets background-color: #fff; on the "body" element.
+<br>
+Typography − Uses the @font-family-base, @font-size-base, and @line-height-base attributes as the typographic base
+<br>
+Link styles − Sets the global link color via attribute @link-color and apply link underlines only on :hover.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What is Normalize in Bootstrap?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+Bootstrap uses Normalize to establish cross browser consistency.
+<br>
+Normalize.css is a modern, HTML5-ready alternative to CSS resets. It is a small CSS file that provides better cross-browser consistency in the default styling of HTML elements.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What is Lead Body Copy?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+To add some emphasis to a paragraph, add class="lead". This will give you larger font size, lighter weight, and a taller line height 
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Explain types of lists supported<br> by Bootstrap?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+Bootstrap supports ordered lists, unordered lists, and definition lists.
+<br><br>
+Ordered lists − An ordered list is a list that falls in some sort of sequential order and is prefaced by numbers.
+<br><br>
+Unordered lists − An unordered list is a list that doesn't have any particular order and is traditionally styled with bullets. If you do not want the bullets to appear then you can remove the styling by using the class .list-unstyled. You can also place all list items on a single line using the class .list-inline.
+<br><br>
+Definition lists − In this type of list, each list item can consist of both the "dt" and the "dd" elements. "dt" stands for definition term, and like a dictionary, this is the term (or phrase) that is being defined. Subsequently, the "dd" is the definition of the "dt". You can make terms and descriptions in "dl" line up side-by-side using class dl-horizontal.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What are glyphicons?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+Glyphicons are icon fonts which you can use in your web projects. Glyphicons Halflings are not free and require licensing, however their creator has made them available for Bootstrap projects free of cost. 
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What is a transition plugin?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The transition plugin provides simple transition effects such as Sliding or fading in modals. 
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What is a Modal Plugin?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+A modal is a child window that is layered over its parent window. Typically, the purpose is to display content from a separate source that can have some interaction without leaving the parent window. Child windows can provide information, interaction, or more.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What is Bootstrap caraousel?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The Bootstrap carousel is a flexible, responsive way to add a slider to your site. In addition to being responsive, the content is flexible enough to allow images, iframes, videos, or just about any type of content that you might want.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What is button group?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+Button groups allow multiple buttons to be stacked together on a single line. This is useful when you want to place items like alignment buttons together.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which class is used for basic<br> button group?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+.btn-group class is used for a basic button group. Wrap a series of buttons with class .btn in .btn-group.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which classses can be applied to<br> button group instead of resizing<br> each button?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+.btn-group-lg, .btn-group-sm, .btn-group-xs classses can be applied to button group instead of resizing each button.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which class make a set of buttons<br> appear vertically stacked rather<br> than horizontally?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+.btn-group-vertical class make a set of buttons appear vertically stacked rather than horizontally.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+How will you create a tabbed<br> navigation menu?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+To create a tabbed navigation menu −
+<br>
+<br>
+Start with a basic unordered list with the base class of .nav.
+<br>
+<br>
+
+Add class .nav-tabs.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+How will you create a pills <br>navigation menu?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+To create a pills navigation menu −
+<br><br>
+Start with a basic unordered list with the base class of .nav.
+<br><br>
+Add class .nav-pills.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+How will you create a vertical<br> pills navigation menu?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+You can stack the pills vertically using the class .nav-stacked along with the classes: .nav, .nav-pills.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What is bootstrap navbar?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The navbar is one of the prominent features of Bootstrap sites. Navbars are responsive 'meta' components that serve as navigation headers for your application or site. Navbars collapse in mobile views and become horizontal as the available viewport width increases. At its core, the navbar includes styling for site names and basic navigation.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+How to create a navbar in bootstrap?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+To create a default navbar −
+<br><br>
+Add the classes .navbar, .navbar-default to the "nav" tag.
+<br>
+Add role="navigation" to the above element, to help with accessibility.
+<br>
+Add a header class .navbar-header to the "div" element. Include an "a" element with class navbar-brand. This will give the text a slightly larger size.
+<br><br>
+To add links to the navbar, simply add an unordered list with the classes of .nav, .navbar-nav.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What is bootstrap breadcrumb?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+Breadcrumbs are a great way to show hierarchy-based information for a site. In the case of blogs, breadcrumbs can show the dates of publishing, categories, or tags.
+<br>
+They indicate the current page's location within a navigational hierarchy.
+<br>
+A breadcrumb in Bootstrap is simply an unordered list with a class of .breadcrumb. The separator is automatically added by CSS (bootstrap.min.css).
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which class is used for basic pagination?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+.pagination class is uesed to add the pagination on a page.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+How will you customize links of<br> pagination?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+You can customize links by using .disabled for uncheckable links and .active to indicate the current page.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What are bootstrap labels?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+Bootstrap labels are great for offering counts, tips, or other markup for pages. Use class .label to display labels.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What is Bootstrap page header?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The page header is a nice little feature to add appropriate spacing around the headings on a page. This is particularly helpful on a web page where you may have several post titles and need a way to add distinction to each of them. To use a page header, wrap your heading in a "div" with a class of .page-header.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+How to create thumbnails using<br> Bootstrap?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+To create thumbnails using Bootstrap −<br><br>
+Add an "a" tag with the class of .thumbnail around an image.
+
+This adds four pixels of padding and a gray border.
+
+On hover, an animated glow outlines the image.
+</ion-card-content></ion-card>
+</ion-content>

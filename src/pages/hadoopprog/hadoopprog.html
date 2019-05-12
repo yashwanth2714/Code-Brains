@@ -1,0 +1,292 @@
+<!--
+  Generated template for the HadoopprogPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-navbar color="ownclr">
+      <button ion-button menuToggle  icon-only end side="right">
+          <ion-icon name="menu"></ion-icon>
+        </button>
+      <ion-title>Hadoop MCQ</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+  
+  <ion-content style="background-color: rgb(233, 233, 240)">
+  
+          <ion-card class="pad" style="background-color:  rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+            <ion-card-header style=" color:white;font-size: 16px">
+          A ________ node acts as the Slave and is<br> responsible for executing a Task assigned<br> to it by the JobTracker.<br><br>
+a) MapReduce<br>
+b) Mapper<br>
+c) TaskTracker<br>
+d) JobTracker<br><br>
+</ion-card-header>
+<ion-card-content style="color: rgb(62, 184, 58);font-size: 14px">
+
+Answer: c<br><br>
+Explanation: TaskTracker receives the information necessary for execution of a Task from JobTracker, Executes the Task, and Sends the Results back to JobTracker.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:  rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color:white;font-size: 16px">
+
+Point out the correct statement :<br><br>
+a) MapReduce tries to place the data<br> and the compute as close as possible<br>
+b) Map Task in MapReduce is performed<br> using the Mapper() function<br>
+c) Reduce Task in MapReduce is<br> performed using the Map() function<br>
+d) All of the mentioned<br><br>
+</ion-card-header>
+<ion-card-content style="color: rgb(62, 184, 58);font-size: 14px">
+
+Answer: a<br><br>
+Explanation: This feature of MapReduce is “Data Locality”.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:  rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color:white;font-size: 16px">
+___________ part of the MapReduce is<br> responsible for processing one or more<br> chunks of data and producing the output<br> results.<br><br>
+a) Maptask<br>
+b) Mapper<br>
+c) Task execution<br>
+d) All of the mentioned<br><br>
+</ion-card-header>
+<ion-card-content style="color: rgb(62, 184, 58);font-size: 14px">
+
+Answer: a<br><br>
+Explanation: Map Task in MapReduce is performed using the Map() function.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:  rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color:white;font-size: 16px">
+_________ function is responsible for<br> consolidating the results produced by<br> each of the Map() functions/tasks.<br><br>
+a) Reduce<br>
+b) Map<br>
+c) Reducer<br>
+d) All of the mentioned<br><br>
+</ion-card-header>
+<ion-card-content style="color: rgb(62, 184, 58);font-size: 14px">
+
+Answer: a<br><br>
+Explanation: Reduce function collates the work and resolves the results.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:  rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color:white;font-size: 16px">
+Point out the wrong statement :<br><br>
+a) A MapReduce job usually splits the<br> input data-set into independent <br>chunks which are processed by the<br> map tasks in a completely parallel<br> manner<br>
+b) The MapReduce framework operates<br> exclusively on pairs<br>
+c) Applications typically implement the<br> Mapper and Reducer interfaces to provide<br> the map and reduce methods<br>
+d) None of the mentioned<br><br>
+</ion-card-header>
+<ion-card-content style="color: rgb(62, 184, 58);font-size: 14px">
+
+Answer: d<br><br>
+Explanation: The MapReduce framework takes care of scheduling tasks, monitoring them and re-executes the failed tasks.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:  rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color:white;font-size: 16px">
+Although the Hadoop framework is<br> implemented in Java , MapReduce<br> applications need not be written in :<br><br>
+a) Java<br>
+b) C<br>
+c) C#<br>
+d) None of the mentioned<br><br>
+</ion-card-header>
+<ion-card-content style="color: rgb(62, 184, 58);font-size: 14px">
+
+Answer: a<br><br>
+Explanation: Hadoop Pipes is a SWIG- compatible C++ API to implement MapReduce applications (non JNITM based).
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:  rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color:white;font-size: 16px">
+________ is a utility which allows users to<br> create and run jobs with any<br> executables as the mapper and/or<br> the reducer.<br><br>
+a) Hadoop Strdata<br>
+b) Hadoop Streaming<br>
+c) Hadoop Stream<br>
+d) None of the mentioned<br><br>
+</ion-card-header>
+<ion-card-content style="color: rgb(62, 184, 58);font-size: 14px">
+
+Answer: b<br><br>
+Explanation: Hadoop streaming is one of the most important utilities in the Apache Hadoop distribution.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:  rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color:white;font-size: 16px">
+__________ maps input key/value pairs to<br> a set of intermediate key/value<br> pairs.<br><br>
+a) Mapper<br>
+b) Reducer<br>
+c) Both Mapper and Reducer<br>
+d) None of the mentioned<br><br>
+</ion-card-header>
+<ion-card-content style="color: rgb(62, 184, 58);font-size: 14px">
+
+Answer: a<br><br>
+Explanation: Maps are the individual tasks that transform input records into intermediate records.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:  rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color:white;font-size: 16px">
+The number of maps is usually driven<br> by the total size of :<br><br>
+a) inputs<br>
+b) outputs<br>
+c) tasks<br>
+d) None of the mentioned<br><br>
+</ion-card-header>
+<ion-card-content style="color: rgb(62, 184, 58);font-size: 14px">
+
+Answer: a<br><br>
+Explanation: Total size of inputs means total number of blocks of the input files.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:  rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color:white;font-size: 16px">
+_________ is the default Partitioner<br> for partitioning key space.<br><br>
+a) HashPar<br>
+b) Partitioner<br>
+c) HashPartitioner<br>
+d) None of the mentioned<br><br>
+</ion-card-header>
+<ion-card-content style="color: rgb(62, 184, 58);font-size: 14px">
+
+Answer: c<br><br>
+Explanation: The default partitioner in Hadoop is the HashPartitioner which has a method called getPartition to partition.
+
+</ion-card-content></ion-card>
+
+
+
+<ion-card class="pad" style="background-color:  rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color:white;font-size: 16px">
+Which of the following class provides<br> access to configuration parameters ?<br><br>
+a) Config<br>
+b) Configuration<br>
+c) OutputConfig<br>
+d) None of the mentioned<br><br>
+</ion-card-header>
+<ion-card-content style="color: rgb(62, 184, 58);font-size: 14px">
+
+
+Answer: b<br><br>
+Explanation: Configurations are specified by resources.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:  rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color:white;font-size: 16px">
+Point out the correct statement :<br><br>
+a) Configuration parameters may be<br> declared static<br>
+b) Unless explicitly turned off, Hadoop<br> by default specifies two resources<br>
+c) Configuration class provides access<br> to configuration parameters<br>
+d) None of the mentioned<br><br>
+</ion-card-header>
+<ion-card-content style="color: rgb(62, 184, 58);font-size: 14px">
+
+
+Answer: a<br><br>
+Explanation: Once a resource declares a value final, no subsequently-loaded resource can alter that value.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:  rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color:white;font-size: 16px">
+___________ gives site-specific<br> configuration for a given hadoop<br> installation.<br><br>
+a) core-default.xml<br>
+b) core-site.xml<br>
+c) coredefault.xml<br>
+d) all of the mentioned<br><br>
+</ion-card-header>
+<ion-card-content style="color: rgb(62, 184, 58);font-size: 14px">
+
+
+Answer: b<br><br>
+Explanation: core-default.xml is read-only defaults for hadoop.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:  rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color:white;font-size: 16px">
+Administrators typically define parameters<br> as final in __________ for values that<br> user applications may not alter.<br><br>
+a) core-default.xml<br>
+b) core-site.xml<br>
+c) coredefault.xml<br>
+d) all of the mentioned<br><br>
+</ion-card-header>
+<ion-card-content style="color: rgb(62, 184, 58);font-size: 14px">
+
+
+Answer: b<br><br>
+Explanation: Value strings are first processed for variable expansion.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:  rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color:white;font-size: 16px">
+Point out the wrong statement :<br><br>
+a) addDeprecations adds a set of<br> deprecated keys to the global deprecations<br>
+b) configuration parameters cannot be<br> declared final<br>
+c) addDeprecations method is lockless<br>
+d) none of the mentioned<br><br>
+</ion-card-header>
+<ion-card-content style="color: rgb(62, 184, 58);font-size: 14px">
+
+
+Answer: b<br><br>
+Explanation: Configuration parameters may be declared final.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:  rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color:white;font-size: 16px">
+_________ method clears all keys<br> from the configuration.<br><br>
+a) clear<br>
+b) addResource<br>
+c) getClass<br>
+d) none of the mentioned<br><br>
+</ion-card-header>
+<ion-card-content style="color: rgb(62, 184, 58);font-size: 14px">
+
+
+Answer: a<br><br>
+Explanation: getClass is used to get the value of the name property as a Class.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:  rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color:white;font-size: 16px">
+________ method adds the deprecated <br>key to the global deprecation map.<br><br>
+a) addDeprecits<br>
+b) addDeprecation<br>
+c) keyDeprecation<br>
+d) none of the mentioned<br><br>
+</ion-card-header>
+<ion-card-content style="color: rgb(62, 184, 58);font-size: 14px">
+
+
+Answer: b<br><br>
+Explanation: addDeprecation does not override any existing entries in the deprecation map.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:  rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color:white;font-size: 16px">
+________ checks whether the given <br>key is deprecated.<br><br>
+a) isDeprecated<br>
+b) setDeprecated<br>
+c) isDeprecatedif<br>
+d) all of the mentioned<br><br>
+</ion-card-header>
+<ion-card-content style="color: rgb(62, 184, 58);font-size: 14px">
+
+
+Answer: a<br><br>
+Explanation: Method returns true if the key is deprecated and false otherwise.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:  rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color:white;font-size: 16px">
+_________ is useful for iterating the<br> properties when all deprecated properties<br> for currently set properties <br>need to be present.<br><br>
+a) addResource<br>
+b) setDeprecatedProperties<br>
+c) addDefaultResource<br>
+d) none of the mentioned<br><br>
+</ion-card-header>
+<ion-card-content style="color: rgb(62, 184, 58);font-size: 14px">
+  Answer: b<br><br>
+Explanation: setDeprecatedProperties sets all deprecated properties that are not currently set but have a corresponding new property that is set.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:  rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color:white;font-size: 16px">
+Which of the following adds a <br>configuration resource ?<br><br>
+a) addResource<br>
+b) setDeprecatedProperties<br>
+c) addDefaultResource<br>
+d) addResource<br><br>
+</ion-card-header>
+<ion-card-content style="color: rgb(62, 184, 58);font-size: 14px">
+
+
+Answer: d<br><br>
+Explanation: The properties of this resource will override properties of previously added resources, unless they were marked final
+</ion-card-content></ion-card>
+</ion-content>

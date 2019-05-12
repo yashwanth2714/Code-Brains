@@ -1,0 +1,580 @@
+<!--
+  Generated template for the PyprogPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="ownclr">
+    <button ion-button menuToggle  icon-only end side="right">
+        <ion-icon name="menu"></ion-icon>
+      </button>
+<ion-title>Python Programming Questions</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content   style="background-color: rgb(233, 233, 240)">
+  <h3 style="font-size: 18px;color: black;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ">Predict the output of below programs</h3>
+ 
+
+           <ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+            <ion-card-header style=" color:white;font-size: 16px">
+
+  r = lambda q: q * 2<br>
+  s = lambda q: q * 3<br>
+  x = 2<br>
+  x = r(x) <br>
+  x = s(x) <br>
+  x = r(x) <br>
+  print x 
+ 
+</ion-card-header>
+<ion-card-content style="color: rgb(62, 184, 58);font-size: 14px">
+  Output:
+  <br>
+  24<br>
+  Explanation :<br><br> In the above program r and s are lambda functions or anonymous functions and q is the argument to both of the functions. In first step we have initialized x to 2.<br><br>
+   In second step we have passed x as argument to the lambda function r, this will return x*2 which is stored in x. That is, x = 4 now.
+  <br><br> Similarly in third step we have passed x to lambda function s, So x = 4*3. i.e, x = 12 now.
+  <br> Again in the last step, x is multiplied by 2 by passing it to function r. Therefore, x = 24.
+  
+   
+</ion-card-content> </ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+ <ion-card-header style=" color:white;font-size: 16px">  
+  
+  
+  a = 4.5<br>
+  b = 2<br>
+  print a//b <br>
+</ion-card-header>
+<ion-card-content style="color: rgb(62, 184, 58);font-size: 14px">
+  
+  Output:<br>
+  
+  2.0<br><br>
+  Explanation : <br><br>This type of division is called truncating division where the remainder is truncated or dropped.
+</ion-card-content> </ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+ <ion-card-header style=" color:white;font-size: 16px">
+   
+  
+  a = True<br>
+  b = False<br>
+  c = False<br>
+  <br>
+  if a or b and c: <br>
+      print "PYTHON"<br>
+  else: <br>
+      print "python"<br>
+    </ion-card-header>
+    <ion-card-content style="color: rgb(62, 184, 58);font-size: 14px">
+  
+  Output:<br>
+  
+  PYTHON<br><br>
+  Explanation : <br>In Python, AND operator has higher precedence than OR operator. So, it is evaluated first. i.e, (b and c) evaluates to false.Now OR operator is evaluated. Here, (True or False) evaluates to True. So the if condition becomes True and PYTHON is printed as output.
+  
+</ion-card-content> </ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+ <ion-card-header style=" color:white;font-size: 16px">
+  
+  
+  a = True<br>
+  b = False<br>
+  c = False<br><br>
+    
+  if not a or b: <br>
+      print 1<br>
+  elif not a or not b and c: <br>
+      print 2<br>
+  elif not a or b or not b and a: <br>
+      print 3<br>
+  else: <br>
+      print 4<br>
+  
+    </ion-card-header>
+    <ion-card-content style="color: rgb(62, 184, 58);font-size: 14px">
+  Output:<br>
+  
+  3<br><br>
+  Explanation: <br>In Python the precedence order is first NOT then AND and in last OR. So the if condition and second elif condition evaluates to False while third elif condition is evaluated to be True resulting in 3 as output.
+</ion-card-content> </ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+ <ion-card-header style=" color:white;font-size: 16px">
+   
+  
+  count = 1 <br>
+  <br>    
+  def doThis(): <br><br>
+    
+      global count <br><br>
+    
+      for i in (1, 2, 3):  <br>
+          count += 1<br><br>
+    
+  doThis() <br><br>
+    
+  print count 
+</ion-card-header>
+<ion-card-content style="color: rgb(62, 184, 58);font-size: 14px">
+  
+  Output:<br>
+  
+   4 <br><br>
+  Explanation: <br>The variable count declared outside the function is global variable and also the count variable being referenced in the function is the same global variable defined outside of the function.
+  <br><br> So, the changes made to variable in the function is reflected to the original variable. So, the output of the program is 4.
+
+
+
+
+</ion-card-content> </ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+ <ion-card-header style=" color:white;font-size: 16px">
+
+class Acc: 
+<br>    def __init__(self, id): 
+<br>    self.id = id
+<br>    id = 555 
+<br><br>
+acc = Acc(111) <br>
+print acc.id
+</ion-card-header>
+<ion-card-content style="color: rgb(62, 184, 58);font-size: 14px">
+
+Output:<br>
+
+111<br><br>
+Explanation:<br> Instantiation of the class “Acc” automatically calls the method __init__ and passes the object as the self parameter. 111 is assigned to data attribute of the object called id.
+<br>The value “555” is not retained in the object as it is not assigned to a data attribute of the class/object. So, the output of the program is “111”
+
+ 
+
+</ion-card-content> </ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+ <ion-card-header style=" color:white;font-size: 16px">
+
+ 
+
+for i in  range(2): <br>
+    print i <br><br>
+  
+for i in range(4,6): <br>
+    print i 
+  </ion-card-header>
+  <ion-card-content style="color: rgb(62, 184, 58);font-size: 14px">
+
+Output:<br>
+
+0<br>
+1<br>
+4<br>
+5<br><br>
+Explanation:<br> If only single argument is passed to the range method, Python considers this argument as the end of the range and the default start value of range is 0. So, it will print all the numbers starting from 0 and before the supplied argument.
+<br><br>For the second for loop the starting value is explicitly supplied as 4 and ending is 5.
+</ion-card-content> </ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+ <ion-card-header style=" color:white;font-size: 16px">
+ 
+
+
+values = [1, 2, 3, 4] <br>
+numbers = set(values) <br><br>
+  
+def checknums(num): <br>
+    if num in numbers: <br>
+        return True<br>
+    else: <br>
+        return False<br><br>
+  
+for i in  filter(checknums, values): <br>
+    print i 
+  </ion-card-header>
+  <ion-card-content style="color: rgb(62, 184, 58);font-size: 14px">
+Output:<br>
+
+1<br>
+2<br>
+3<br>
+4<br><br>
+Explanation: <br>The function “filter” will return all items from list values which return True when passed to the function “checkit”. “checkit” will check if the value is in the set.
+<br><br> Since all the numbers in the set come from the values list, all of the original values in the list will return True.
+
+ 
+</ion-card-content> </ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+ <ion-card-header style=" color:white;font-size: 16px">
+
+
+counter = {{'{'}} {{'}'}} <br><br>
+  
+def addToCounter(country): <br>
+    if country in  counter: <br>
+        counter[country] += 1<br>
+    else: <br>
+        counter[country] = 1<br><br>
+  
+addToCounter('China') <br>
+addToCounter('Japan') <br>
+addToCounter('china') <br><br>
+  
+print len(counter) 
+</ion-card-header>
+<ion-card-content style="color: rgb(62, 184, 58);font-size: 14px">
+
+Output:<br>
+
+3<br><br>
+Explanation:<br> The task of “len” function is to return number of keys in a dictionary. Here 3 keys are added to the dictionary “country” using the “addToCounter” function.
+<br><br>Please note carefully – The keys to a dictionary are case sensitive.
+
+
+
+
+
+</ion-card-content> </ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+ <ion-card-header style=" color:white;font-size: 16px">
+
+
+
+
+class Demo: <br>
+    def __init__(self, id): <br>
+        self.id = id<br><br>
+  
+manager = Demo(100) <br>
+<br>
+manager.__dict__['life'] = 49<br><br>
+  
+print manager.life + len(manager.__dict__)<br> 
+</ion-card-header>
+<ion-card-content style="color: rgb(62, 184, 58);font-size: 14px">
+
+Output:
+<br>
+51<br><br>
+Explanation :<br> In the above program we are creating a member variable having name ‘life’ by adding it directly to the dictionary of the object ‘manager’ of class ‘Demo’. 
+<br><br>Total numbers of items in the dictionary is 2, the variables ‘life’ and ‘id’. Therefore the size or the length of the dictionary is 2 and the variable ‘life’ is assigned a value ’49’. 
+<br>So the sum of the variable ‘life’ and the size of the dictionary is 49 + 2 = 51.
+
+
+
+</ion-card-content> </ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+ <ion-card-header style=" color:white;font-size: 16px">
+
+ 
+a = "Fresher "<br><br>
+  
+b = 13<br><br>
+  
+print a + b 
+</ion-card-header>
+<ion-card-content style="color: rgb(62, 184, 58);font-size: 14px">
+
+Output:<br>
+
+An error is shown.<br><br>
+Explanation : <br>As you can see the variable ‘b’ is of type integer and the variable ‘a’ is of type string.<br> Also as Python is a strongly typed language we cannot simply concatenate an integer with a string. We have to first convert the integer variable to the type string to concatenate it with a string variable. <br><br>So, trying to concatenate an integer variable to a string variable, an exception of type “TypeError” is occurred.
+
+</ion-card-content> </ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+ <ion-card-header style=" color:white;font-size: 16px">
+
+dictionary = {{'{'}}  {{'}'}}<br>
+dictionary[1] = 1<br>
+dictionary['1'] = 2<br>
+dictionary[1] += 1<br><br>
+  
+sum = 0<br>
+for k in dictionary: <br>
+    sum += dictionary[k] <br><br>
+  
+print sum
+</ion-card-header>
+<ion-card-content style="color: rgb(62, 184, 58);font-size: 14px">
+Output:<br>
+
+4<br><br>
+Explanation : <br>In the above dictionary, the key 1 enclosed between single quotes and only 1 represents two different keys as one of them is integer and other is string. So, the output of the program is 4.
+
+ 
+</ion-card-content> </ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+ <ion-card-header style=" color:white;font-size: 16px">
+
+
+dictionary = {{'{'}}1:'1', 2:'2', 3:'3'{{'}'}}<br>
+del dictionary[1] <br>
+dictionary[1] = '10'<br>
+del dictionary[2] <br>
+print len(dictionary) 
+</ion-card-header>
+<ion-card-content style="color: rgb(62, 184, 58);font-size: 14px">
+
+Output:
+<br>
+2<br><br>
+Explanation :<br> The task of the ‘del’ function is to remove key-value pairs from a dictionary. Initially the size of the given dictionary was 3. Then the key value pair for key 1 is first removed and then added back with a new value. Then the key value pair for key 2 is removed. So, finally the size of the dictionary is 2.
+
+
+
+
+
+
+
+</ion-card-content> </ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+ <ion-card-header style=" color:white;font-size: 16px">
+
+
+nameList = ['Hardik', 'Pratik', 'Rahul', 'Ram'] <br><br>
+  
+print nameList[1][-1] 
+</ion-card-header>
+<ion-card-content style="color: rgb(62, 184, 58);font-size: 14px">
+
+Output:
+<br>
+k<br><br>
+Explanation:<br>
+The index position -1 represents either the last element in a list or the last character in a String. In the above given list of names “nameList”, the index 1 represents the second element i.e, the second string “Pratik” and the index -1 represents the last character in the string “Pratik”. So, the output is “k”.
+
+ 
+
+
+
+</ion-card-content> </ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+ <ion-card-header style=" color:white;font-size: 16px">
+
+nameList = ['Harsh', 'Pratik', 'Bob', 'Dhruv'] <br><br>
+  
+pos = nameList.index("Pardeep") <br><br>
+  
+print pos * 5 
+</ion-card-header>
+<ion-card-content style="color: rgb(62, 184, 58);font-size: 14px">
+
+Output:
+<br>
+An Exception is thrown, ValueError: 'Pardeep' is not in list  <br><br>
+Explanation:<br>
+The task of index is to find the position of a supplied value in a given list. In the above program the supplied value is “Pardeep” and list is nameList. As Pardeep is not present in the list, an exception is thrown.
+
+</ion-card-content> </ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+ <ion-card-header style=" color:white;font-size: 16px">
+
+funCodes = [1, 2, 3, 4] <br><br>
+  
+funCodes.append([5,6,7,8]) <br><br>
+  
+print len(funCodes) 
+</ion-card-header>
+<ion-card-content style="color: rgb(62, 184, 58);font-size: 14px">
+
+Output:
+<br>
+5<br><br>
+Explanation:<br>
+The task of append() method is to append a passed obj into an existing list. But instead of passing a list to the append method will not merge the two lists, the entire list which is passed is added as an element of the list. So the output is 5.
+</ion-card-content> </ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+ <ion-card-header style=" color:white;font-size: 16px">
+ 
+
+def addToList(listcontainer): <br>
+    listcontainer += [10] <br><br>
+  
+mylistContainer = [10, 20, 30, 40] <br>
+addToList(mylistContainer) <br>
+print len(mylistContainer) 
+</ion-card-header>
+<ion-card-content style="color: rgb(62, 184, 58);font-size: 14px">
+
+Output:
+<br>
+5<br><br>
+Explanation:<br>
+In Python, everything is a reference and references are passed by value. Parameter passing in Python is same as reference passing in Java. As a consequence, the function can modify the value referred by passed argument, i.e. the value of the variable in the caller’s scope can be changed.<br><br>
+ Here the task of the function “addToList” is to add an element 10 in the list, So this will increase the length of list by 1. So the output of program is 5.
+
+
+
+</ion-card-content> </ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+ <ion-card-header style=" color:white;font-size: 16px">
+
+
+def gfgFunction(): <br>
+    "Geeksforgeeks is cool website for<br> boosting up technical skills"<br>
+    return 1<br><br>
+  
+print gfgFunction.__doc__[17:21] 
+</ion-card-header>
+<ion-card-content style="color: rgb(62, 184, 58);font-size: 14px">
+
+Output:<br>
+
+cool<br><br>
+Explanation:<br>
+There is a docstring defined for this method, by putting a string on the first line after the start of the function definition. The docstring can be referenced using the __doc__ attribute of the function.
+And hence it prints the indexed string.
+
+
+</ion-card-content> </ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+ <ion-card-header style=" color:white;font-size: 16px">
+
+ 
+
+class A(object): <br>
+    val = 1<br><br>
+  
+class B(A): <br>
+    pass<br><br>
+  
+class C(A): <br>
+    pass<br><br>
+  
+print A.val, B.val, C.val <br>
+B.val = 2<br>
+print A.val, B.val, C.val <br>
+A.val = 3<br>
+print A.val, B.val, C.val 
+</ion-card-header>
+<ion-card-content style="color: rgb(62, 184, 58);font-size: 14px">
+
+Output:
+<br>
+1 1 1<br>
+1 2 1<br>
+3 2 3<br><br>
+Explanation:<br>
+In Python, class variables are internally handled as dictionaries. If a variable name is not found in the dictionary of the current class, the class hierarchy (i.e., its parent classes) are searched until the referenced variable name is found, if the variable is not found error is being thrown.
+<br><br>So, in the above program the first call to print() prints the initialized value i.e, 1.
+<br><br>In the second call since B. val is set to 2, the output is 1 2 1.
+<br><br>The last output 3 2 3 may be surprising. Instead of 3 3 3, here B.val reflects 2 instead of 3 since it is overridden earlier.
+</ion-card-content> </ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+ <ion-card-header style=" color:white;font-size: 16px">
+
+check1 = ['Learn', 'Quiz', 'Practice',<br> 'Contribute'] <br>
+check2 = check1 <br>
+check3 = check1[:] <br><br>
+  
+check2[0] = 'Code'<br>
+check3[1] = 'Mcq'<br><br>
+  
+count = 0<br>
+for c in (check1, check2, check3): <br>
+    if c[0] == 'Code': <br>
+        count += 1<br>
+    if c[1] == 'Mcq': <br>
+        count += 10<br><br>
+  
+print count 
+</ion-card-header>
+<ion-card-content style="color: rgb(62, 184, 58);font-size: 14px">
+
+Output:<br>
+
+12<br><br>
+Explanation:<br>
+When assigning check1 to check2, we create a second reference to the same list. Changes to check2 affects check1. When assigning the slice of all elements in check1 to check3, we are creating a full copy of check1 which can be modified independently (i.e, any change in check3 will not affect check1).
+<br><br>So, while checking check1 ‘Code’ gets matched and count increases to 1, but Mcq doest gets matched since its available only in check3.
+<br><br>Now checking check2 here also ‘Code’ gets matched resulting in count value to 2.
+<br><br>Finally while checking check3 which is separate than both check1 and check2 here only Mcq gets matched and count becomes 12.
+</ion-card-content> </ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+ <ion-card-header style=" color:white;font-size: 16px">
+
+
+def gfg(x,l=[]): <br>
+    for i in range(x):<br> 
+        l.append(i*i) <br>
+    print(l)  <br><br>
+  
+gfg(2) <br>
+gfg(3,[3,2,1])<br> 
+gfg(3) 
+</ion-card-header>
+<ion-card-content style="color: rgb(62, 184, 58);font-size: 14px">
+
+Output:
+<br>
+[0, 1]<br>
+[3, 2, 1, 0, 1, 4]<br>
+[0, 1, 0, 1, 4]<br><br>
+Explanation:<br>
+The first function call should be fairly obvious, the loop appends 0 and then 1 to the empty list, l. l is a name for a variable that points to a list stored in memory.
+<br><br> The second call starts off by creating a new list in a new block of memory. l then refers to this new list. It then appends 0, 1 and 4 to this new list. So that’s great. 
+<br><br>The third function call is the weird one. It uses the original list stored in the original memory block. That is why it starts off with 0 and 1.
+
+</ion-card-content> </ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+ <ion-card-header style=" color:white;font-size: 16px">
+
+ What is the output of the following <br>program?<br><br>
+
+data = [2, 3, 9] <br>
+temp = [[x for x in[data]] for x in range(3)] <br>
+print (temp) <br><br>
+
+
+a) [[[2, 3, 9]], [[2, 3, 9]], [[2, 3, 9]]]<br>
+b) [[2, 3, 9], [2, 3, 9], [2, 3, 9]]<br>
+c) [[[2, 3, 9]], [[2, 3, 9]]]<br>
+d) None of these
+</ion-card-header>
+<ion-card-content style="color: rgb(62, 184, 58);font-size: 14px">
+Ans. (a)<br><br>
+Explanation: [x for x in[data] returns a new list copying the values in the list data and the outer for statement prints the newly created list 3 times.
+</ion-card-content> </ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+ <ion-card-header style=" color:white;font-size: 16px">
+ What is the output of the following<br> program?<br><br>
+
+data = [x for x in range(5)] <br>
+temp = [x for x in range(7) if x in data<br> and x%2==0] <br>
+print(temp) <br><br>
+
+
+a) [0, 2, 4, 6]<br>
+b) [0, 2, 4]<br>
+c) [0, 1, 2, 3, 4, 5]<br>
+d) Runtime error
+</ion-card-header>
+<ion-card-content style="color: rgb(62, 184, 58);font-size: 14px">
+Ans. (b)<br><br>
+Explanation: The is statement checks whether the value lies in list data and if it does whether it’s divisible by 2. It does so for x in (0, 7).
+</ion-card-content> </ion-card>
+
+
+
+</ion-content>

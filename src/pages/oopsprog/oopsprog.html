@@ -1,0 +1,793 @@
+<!--
+  Generated template for the OopsprogPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="ownclr">
+    <button ion-button menuToggle  icon-only end side="right">
+        <ion-icon name="menu"></ion-icon>
+      </button>
+<ion-title>Oops Programming Questions</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content   style="background-color: rgb(233, 233, 240)">
+  <h3 style="font-size: 18px;color: black;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ">Predict the output of below programs</h3>
+ 
+      <ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+        <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+      // Assume that integers take 4 bytes <br><br>
+#include"iostream"<br>
+  
+using namespace std;    
+<br>
+<br>class Test 
+{{'{'}}<br>
+<br>  static int i; 
+<br>int j; 
+<br>{{'}'}}; 
+<br><br>
+int Test::i; <br>
+  
+int main()<br> 
+{{'{'}}<br>
+    cout << sizeof(Test); <br>
+    return 0; <br>
+    {{'}'}}
+    
+  </ion-card-header>
+  <ion-card-content style="font-size: 14px">
+
+Output: 4 (size of integer)<br><br>
+static data members do not contribute in size of an object. So ‘i’ is not considered in size of Test. Also, all functions (static and non-static both) do not contribute in size.
+
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+
+#include"iostream"<br><br>
+  
+using namespace std; <br>
+class Base1 {{'{'}}<br>
+ public: <br>
+     Base1() <br>
+     {{'{'}} cout << " Base1's constructor called" <<<br> endl;  {{'}'}}<br>
+     {{'}'}}; 
+     <br><br>
+class Base2 {{'{'}} <br>
+ public: <br>
+     Base2() <br>
+     {{'{'}} cout << "Base2's constructor called" <<<br> endl;  {{'}'}}<br>
+     {{'}'}}; <br><br>
+  
+class Derived: public Base1, public Base2<br> {{'{'}}<br>
+   public: <br>
+     Derived() <br>
+     {{'{'}}  cout << "Derived's constructor called" <<<br> endl;  {{'}'}} <br>
+     {{'}'}}; 
+     <br><br>
+int main() <br>
+{{'{'}}<br>
+   Derived d; <br>
+   return 0; <br>
+   {{'}'}}
+
+    
+  </ion-card-header>
+  <ion-card-content style="font-size: 14px">
+Ouput:<br><br>
+Base1’s constructor called<br>
+Base2’s constructor called<br>
+Derived’s constructor called<br><br>
+
+In case of Multiple Inheritance, constructors of base classes are always called in derivation order from left to right and Destructors are called in reverse order.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+
+
+
+
+
+#include"iostream"<br><br>
+  using namespace std; <br><br>
+   
+  class A {{'{'}}  <br>
+   public: <br>
+      A(int ii = 0) : i(ii) {{'{'}} {{'}'}} <br>
+      void show() {{'{'}} cout << "i = " << i << endl;{{'}'}}<br>
+   private: <br>
+      int i; <br>
+      {{'}'}}; <br><br>
+   
+  class B {{'{'}} <br>
+   public: <br>
+      B(int xx) : x(xx) {{'{'}} {{'}'}} <br>
+      operator A() const {{'{'}} return A(x); {{'}'}}<br>
+   private: <br>
+      int x; <br>
+      {{'}'}}; <br>
+      <br><br>
+  void g(A a) <br>
+  {{'{'}}  a.show(); {{'}'}} 
+  <br><br>   
+  int main() {{'{'}}<br>
+    B b(10); <br>
+    g(b); <br>
+    g(20); <br>
+    getchar(); <br>
+    return 0; <br>
+    {{'}'}}
+  
+      
+ </ion-card-header>
+ <ion-card-content style="font-size: 14px">
+  Output:<br><br>
+  i = 10<br>
+  i = 20<br><br>
+  
+  Since there is a Conversion constructor in class A, integer value can be assigned to objects of class A and function call g(20) works. Also, there is a conversion operator overloaded in class B, so we can call g() with objects of class B.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+
+
+
+  #include"iostream"<br><br>
+    using namespace std;<br><br> 
+      
+    class base {{'{'}}<br>
+        int arr[10];      <br>
+        {{'}'}}; <br><br>
+      
+    class b1: public base {{'{'}} {{'}'}}; <br><br>
+      
+    class b2: public base {{'{'}} {{'}'}}; <br><br>
+      
+    class derived: public b1, public b2 {{'{'}} {{'}'}}; 
+    <br><br>   
+    int main(void) 
+    <br> {{'{'}}<br>
+      cout<< sizeof(derived); <br>
+          getchar(); <br>
+      return 0; <br>
+      {{'}'}}
+       
+ </ion-card-header>
+ <ion-card-content style="font-size: 14px">
+    
+    Output: If integer takes 4 bytes, then 80.<br><br>
+    
+    Since b1 and b2 both inherit from class base, two copies of class base are there in class derived. This kind of inheritance without virtual causes wastage of space and ambiguities. virtual base classes are used to save space and avoid ambiguities in such cases. For example, following program prints 48. 8 extra bytes are for bookkeeping information stored by the compiler (See this for details)
+    <br><br>
+    #include"iostream"<br>
+    using namespace std; <br><br>
+      
+    class base {{'{'}} <br>
+      int arr[10];      <br>
+      {{'}'}}; <br><br>
+      
+    class b1: virtual public base {{'{'}} {{'}'}}; 
+    <br><br>      
+    class b2: virtual public base {{'{'}} {{'}'}}; 
+    <br><br>
+    class derived: public b1, public b2  {{'{'}} {{'}'}}; 
+    <br><br>
+    int main(void)<br> 
+    {{'{'}}  <br>
+      cout<< sizeof(derived); <br>
+ getchar(); 
+ <br>      return 0; 
+ <br> {{'}'}}
+    </ion-card-content></ion-card>
+    <ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+      <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+
+
+
+
+    #include"iostream"<br><br>
+  
+      using namespace std; <br><br>
+      class P {{'{'}}<br>
+      public: <br>
+         void print() <br>
+         {{'{'}} cout <<" Inside P::"; {{'}'}}<br>
+         {{'}'}}; <br>
+         <br>
+      class Q : public P {{'{'}}<br>
+      public: <br>
+         void print()<br> 
+         {{'{'}} cout <<" Inside Q"; {{'}'}} <br>
+         {{'}'}}; <br><br>
+        
+      class R: public Q {{'{'}}<br>
+      {{'}'}}; <br><br>
+        
+      int main(void) <br>
+      {{'{'}}<br>
+        R r; <br>
+        
+        r.print();<br> 
+        return 0; <br>
+        {{'}'}}
+     
+          
+ </ion-card-header>
+ <ion-card-content style="font-size: 14px">
+      Output:<br>
+      Inside Q
+      <br><br>
+      The print function is not defined in class R. So it is looked up in the inheritance hierarchy. print() is present in both classes P and Q, which of them should be called? The idea is, if there is multilevel inheritance, then function is linearly searched up in the inheritance heirarchy until a matching function is found.
+    </ion-card-content></ion-card>
+    <ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+      <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">      
+      
+  
+      
+      
+      
+       
+      
+      #include"iostream" <br>
+      #include"stdio.h" <br><br>
+        
+      using namespace std; 
+      <br><br>
+      class Base <br>
+      {{'{'}}<br>
+      public: <br>
+        Base() <br>
+        {{'{'}} <br>
+          fun(); //note: fun() is virtual <br>
+          {{'}'}}<br>
+        virtual void fun()<br> 
+        {{'{'}}<br>
+          cout<<"\nBase Function"; <br>
+          {{'}'}}<br>
+          {{'}'}}; <br><br>
+        
+      class Derived: public Base<br> 
+      {{'{'}}<br>
+      public: <br>
+        Derived(){{'{'}} {{'}'}}<br>
+        virtual void fun() <br>
+        {{'{'}} <br>
+          cout<<"\nDerived Function"; <br>
+          {{'}'}}<br>
+          {{'}'}}; <br><br>
+        
+      int main() <br>
+      {{'{'}}<br>
+        Base* pBase = new Derived(); <br>
+        delete pBase; <br>
+        return 0; <br>
+        {{'}'}}
+        
+ </ion-card-header>
+ <ion-card-content style="font-size: 14px">
+      
+      Output:<br><br>
+      Base Function
+      <br><br>
+      See following excerpt from C++ standard for explanation.
+      <br><br>
+      When a virtual function is called directly or indirectly from a constructor (including from the mem-initializer for a data member) or from a destructor, and the object to which the call applies is the object under construction or destruction, the function called is the one defined in the constructor or destructor’s own class or in one of its bases, but not a function overriding it in a class derived from the constructor or destructor’s class, or overriding it in one of the other base classes of the most derived object.
+      <br><br>
+      Because of this difference in behavior, it is recommended that object’s virtual function is not invoked while it is being constructed or destroyed.
+    </ion-card-content></ion-card>
+    <ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+      <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+
+
+
+
+
+      #include"iostream"<br><br>
+        using namespace std; <br><br>
+          
+        int x = 10; <br>
+        void fun() <br>
+        {{'{'}} <br>
+        <br>            int x = 2; 
+        <br>{{'{'}}
+        <br>    int x = 1; 
+        <br>    cout << ::x << endl;  
+        <br>    {{'}'}}
+        <br>    {{'}'}}
+        <br><br>
+        int main() <br>
+        {{'{'}}<br>
+            fun();<br> 
+            return 0; <br>
+            {{'}'}}<br>
+           
+ </ion-card-header>
+ <ion-card-content style="font-size: 14px">
+        Output: 10<br><br>
+        If Scope Resolution Operator is placed before a variable name then the global variable is referenced. So if we remove the following line from the above program then it will fail in compilation.
+        <br><br>
+          int x = 10;
+        
+        </ion-card-content></ion-card>
+        <ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+          <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+    
+        
+        
+        
+         
+        
+        #include"iostream"<br><br>
+        using namespace std; <br><br>
+        class Point {{'{'}}<br>
+        private: <br>
+            int x; <br>
+            int y; <br>
+        public: <br>
+            Point(int i, int j);  // Constructor <br>
+            {{'}'}}; <br>
+            <br>
+        Point::Point(int i = 0, int j = 0)  {{'{'}}<br>
+            x = i; <br>
+            y = j; <br>
+            cout << "Constructor called"; <br>
+            {{'}'}}<br>
+            <br><br>
+        int main() <br>
+        {{'{'}} <br>
+           Point t1, *t2; <br>
+           return 0; <br>
+           {{'}'}} 
+           
+ </ion-card-header>
+ <ion-card-content style="font-size: 14px">
+        
+        Output: Constructor called.<br><br>
+        If we take a closer look at the statement “Point t1, *t2;:” then we can see that only one object is constructed here. t2 is just a pointer variable, not an object.
+      </ion-card-content></ion-card>
+      <ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+        <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+        
+        
+       
+        
+        #include"iostream" <br><br>
+        using namespace std; <br>
+        <br>
+        class Point {{'{'}}<br>
+        private: <br>
+            int x; <br>
+            int y; <br>
+        public: <br>
+            Point(int i = 0, int j = 0);  <br>  // Normal Constructor <br>
+            Point(const Point &t); // Copy Constructor <br>
+            {{'}'}}; <br>
+            <br>
+        Point::Point(int i, int j)  {{'{'}}<br>
+            x = i; <br>
+            y = j; <br>
+            cout << "Normal Constructor called\n"; <br>
+            {{'}'}}<br><br>
+          
+        Point::Point(const Point &t) {{'{'}} <br>
+           y = t.y; <br>
+           cout << "Copy Constructor called\n"; <br>
+           {{'}'}}<br><br>
+          
+        int main() <br>
+        {{'{'}} <br>
+           Point *t1, *t2; 
+           <br>           t1 = new Point(10, 15); 
+           t2 = new Point(*t1); <br>
+           Point t3 = *t1; <br>
+           Point t4; <br>
+           t4 = t3; <br>
+           return 0; <br>
+           {{'}'}}
+           
+ </ion-card-header>
+ <ion-card-content style="font-size: 14px">
+        
+        Output:<br><br>
+        Normal Constructor called<br>
+        Copy Constructor called<br>
+        Copy Constructor called<br>
+        Normal Constructor called<br>
+        <br><br>
+        See following comments for explanation:
+        <br><br>
+        Point *t1, *t2;   // No constructor call <br>
+        t1 = new Point(10, 15);  // Normal constructor call <br>
+        t2 = new Point(*t1);   // Copy constructor call  <br>
+        Point t3 = *t1;  // Copy Constructor call <br>
+        Point t4;   // Normal Constructor call <br>
+        t4 = t3;   // Assignment operator call <br>
+      </ion-card-content></ion-card>
+      <ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+        <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+
+
+
+
+
+
+
+
+
+
+        
+#include"iostream" <br><br>
+  using namespace std; <br><br>
+    
+  class Test {{'{'}}<br>
+      int value; <br>
+  public: <br>
+  <br>      Test(int v); 
+  <br>{{'}'}}; 
+  <br><br>
+  Test::Test(int v) {{'{'}} <br>
+      value = v; <br>
+      {{'}'}}<br><br>
+    
+  int main() {{'{'}}<br>
+      Test t[100]; <br>
+      return 0; <br>
+      {{'}'}}
+  
+      
+ </ion-card-header>
+ <ion-card-content style="font-size: 14px">
+  Output:<br><br>
+  
+  Compiler error<br>
+  The class Test has one user defined constructor “Test(int v)” that expects one argument. It doesn’t have a constructor without any argument as the compiler doesn’t create the default constructor if user defines a constructor (See this). Following modified program works without any error.
+  <br><br>
+  #include"iostream"<br>
+  using namespace std; <br>
+  <br>
+  class Test {{'{'}}<br>
+      int value; <br>
+  public: <br>
+      Test(int v = 0); <br>
+      {{'}'}}; <br><br>
+    
+  Test::Test(int v) {{'{'}}<br>
+      value = v; <br>
+      {{'}'}}<br>
+      <br>
+  int main() {{'{'}}<br>
+      Test t[100]; <br>
+      return 0; <br>
+      {{'}'}}
+ 
+  
+  
+    </ion-card-content></ion-card>
+    <ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+      <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">  
+
+  
+  #include"iostream"<br><br>
+  using namespace std; <br><br>
+  int &fun() {{'{'}}<br>
+    static int a = 10; <br>
+    return a; <br>
+    {{'}'}}<br><br>
+    
+  int main() {{'{'}}<br>
+    int &y = fun(); <br>
+    y = y +30; <br>
+    cout<< fun(); <br>
+   return 0; <br>
+    {{'}'}}
+
+      
+ </ion-card-header>
+ <ion-card-content style="font-size: 14px">
+  Output:
+  <br><br>
+  40<br>
+  The program works fine because ‘a’ is static. Since ‘a’ is static, memory location of it remains valid even after fun() returns. So a reference to static variable can be returned.
+  
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+  
+
+  
+  #include"iostream" <br><br>
+  using namespace std; <br><br>
+    
+  class Test <br>
+  {{'{'}}<br>
+  public: <br>
+    Test(); <br>
+    {{'}'}}; <br><br>
+    
+  Test::Test()  {{'{'}}<br>
+      cout<<"Constructor Called \n"; <br>
+      {{'}'}}<br><br>
+    
+  int main() <br>
+  {{'{'}}<br>
+      cout<<"Start \n"; <br>
+      Test t1(); <br>
+      cout<<"End \n";<br> 
+      return 0; <br>
+      {{'}'}}
+  
+      
+ </ion-card-header>
+ <ion-card-content style="font-size: 14px">
+  Output:<br><br>
+  
+  Start<br>
+  End<br>
+  Note that the line “Test t1();” is not a constructor call. Compiler considers this line as declaration of function t1 that doesn’t recieve any parameter and returns object of type Test.
+
+
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+
+
+
+
+  #include"iostream"<br>
+  <br>
+    using namespace std; 
+    <br><br>
+    class Test {{'{'}}<br>
+        int value; <br>
+    public: <br>
+    <br>        Test (int v = 0) {{'{'}}value = v;{{'}'}} 
+    <br>int getValue() {{'{'}} return value; {{'}'}}
+    <br>{{'}'}}; 
+    <br><br>
+    int main() {{'{'}} <br>
+        const Test t;   <br>
+        cout << t.getValue();<br> 
+        return 0; <br>
+        {{'}'}}
+   
+        
+ </ion-card-header>
+ <ion-card-content style="font-size: 14px">
+    Output: Compiler Error.<br><br>
+    
+    A const object cannot call a non-const function. The above code can be fixed by either making getValue() const or making t non-const. Following is modified program with getValue() as const, it works fine and prints 0.
+    <br><br>
+    #include"iostream"
+    <br><br>
+    using namespace std; 
+    <br><br>
+    class Test {{'{'}}<br>
+        int value; <br>
+    public: <br>
+        Test (int v = 0) {{'{'}} value = v; {{'}'}}<br>
+        int getValue() const {{'{'}} return value; {{'}'}}<br>
+        {{'}'}}; <br><br>
+      
+    int main() {{'{'}} <br>
+        const Test t;   <br>
+        cout << t.getValue(); <br>
+        return 0; <br>
+        {{'}'}}
+        
+    
+    
+      </ion-card-content></ion-card>
+      <ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+        <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">  
+       
+    #include"iostream"<br><br>
+      
+    using namespace std; 
+    <br><br>
+    class Test {{'{'}} <br>
+        int & t; <br>
+    public: <br>
+        Test (int &x) {{'{'}} t = x; {{'}'}}<br>
+        int getT() {{'{'}} return t; {{'}'}} <br>
+        {{'}'}}; <br><br>
+      
+    int main() <br>
+    {{'{'}}<br>
+    <br>        int x = 20; 
+    <br>Test t1(x); 
+    <br> cout << t1.getT() << " "; 
+    <br>x = 30; 
+    <br>cout << t1.getT() << endl; 
+    <br>return 0; 
+    <br>  {{'}'}}
+        
+ </ion-card-header>
+ <ion-card-content style="font-size: 14px">
+    
+    Output: Compiler Error<br><br>
+    Since t is a reference in Test, it must be initialized using Initializer List. Following is the modified program. It works and prints “20 30”.
+    
+    
+  </ion-card-content></ion-card>
+  <ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+    <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+
+   
+
+    class Test1 {{'{'}}<br>
+        int y; <br>
+        {{'}'}}; <br><br>
+      
+    class Test2 {{'{'}}<br>
+        int x; <br>
+        Test1 t1; <br>
+    public: <br>
+        operator Test1() {{'{'}} return t1; {{'}'}} <br>
+        operator int() {{'{'}} return x; {{'}'}}<br>
+        {{'}'}}; <br><br>
+      
+    void fun ( int x)  {{'{'}} {{'}'}}; <br>
+    void fun ( Test1 t ) {{'{'}} {{'}'}}; <br><br>
+      
+    int main() {{'{'}}<br>
+        Test2 t; <br>
+        fun(t); <br>
+        return 0; <br>
+        {{'}'}}
+        
+ </ion-card-header>
+ <ion-card-content style="font-size: 14px">
+    Output: Compiler Error<br><br>
+    There are two conversion operators defined in the Test2 class. So Test2 objects can automatically be converted to both int and Test1. Therefore, the function call fun(t) is ambiguous as there are two functions void fun(int ) and void fun(Test1 ), compiler has no way to decide which function to call. In general, conversion operators must be overloaded carefully as they may lead to ambiguity.
+  </ion-card-content></ion-card>
+  <ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+    <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+    
+    #include "iostream"<br><br>
+    using namespace std; <br><br>
+      
+    class X {{'{'}}<br>
+    private: <br>
+      static const int a = 76; <br>
+    public: <br>
+      static int getA()  {{'{'}} return a; {{'}'}}<br>
+      {{'}'}}; <br><br>
+      
+    int main() {{'{'}} <br>
+      cout << X::getA()<< endl; <br>
+       return 0; <br>
+       {{'}'}} 
+   
+        
+ </ion-card-header>
+ <ion-card-content style="font-size: 14px">
+    Output: The program compiles and prints 76<br><br>
+    Generally, it is not allowed to initialize data members in C++ class declaration, but static const integral members are treated differently and can be initialized with declaration.
+
+
+  </ion-card-content></ion-card>
+  <ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+    <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+
+
+
+
+
+
+    #include"iostream"<br><br>
+      using namespace std; 
+      <br><br>
+      class Test1<br> 
+      {{'{'}}<br>
+          int x; <br>
+      public: <br>
+          void show() {{'{'}}  {{'}'}}<br>
+          {{'}'}};<br> 
+          <br><br>
+      class Test2<br> 
+      {{'{'}}<br>
+          int x; <br>
+      public: <br>
+          virtual void show() {{'{'}}  {{'}'}}<br>
+          {{'}'}}; <br><br>
+        
+      int main(void)<br> 
+      {{'{'}}<br>
+          cout<< sizeof(Test1)<< endl; <br>
+          cout<< sizeof(Test2)<< endl; <br>
+         return 0; <br>
+            {{'}'}}
+       
+ </ion-card-header>
+ <ion-card-content style="font-size: 14px">
+      
+      Output:<br><br>
+      4<br>
+      8<br>
+      There is only one difference between Test1 and Test2. show() is non-virtual in Test1, but virtual in Test2. When we make a function virtual, compiler adds an extra pointer vptr to objects of the class. Compiler does this to achieve run time polymorphism (See chapter 15 of Thinking in C++ book for more details). The extra pointer vptr adds to the size of objects, that is why we get 8 as size of Test2.
+    </ion-card-content></ion-card>
+    <ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+      <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+      
+      
+     
+      #include"iostream"<br><br>
+      using namespace std; <br><br>
+      class P <br>
+      {{'{'}}<br>
+      public: <br>
+          virtual void show() = 0; <br>
+          {{'}'}}; 
+          <br><br>
+      class Q : public P {{'{'}} <br>
+         int x; <br>
+         {{'}'}}; <br>
+         <br><br>
+      int main(void) <br>
+      {{'{'}}<br>
+          Q q; <br>
+          return 0; <br>
+          {{'}'}} 
+     
+          
+ </ion-card-header>
+ <ion-card-content style="font-size: 14px">
+      Output: Compiler Error<br><br>
+      We get the error because we can’t create objects of abstract classes. P is an abstract class as it has a pure virtual method. Class Q also becomes abstract because it is derived from P and it doesn’t implement show().
+    </ion-card-content></ion-card>
+    
+
+      <!--
+        template <class S, class T> class Pair 
+  {{'{'}}
+  private: 
+      S x; 
+      T y; 
+  /* ... */
+  {{'}'}}; 
+    
+  template <class S> class Element 
+    {{'{'}}
+  private: 
+      S x; 
+  /* ... */
+  {{'}'}}; 
+    
+  int main () 
+  {{'{'}}
+      Pair <Element<int>, Element<char>> p; 
+      return 0; 
+      {{'}'}} 
+ 
+  
+  Output:
+  
+  Compiler Error: '>>' should be '> >' within a nested template argument list
+  When we use nested templates in our program, we must put a space between two closing angular brackets, otherwise it conflicts with operator >>. For example, following program compiles fine.
+  
+  template <class S, class T> class Pair 
+    {{'{'}} 
+  private: 
+      S x; 
+      T y; 
+  /* ... */
+  {{'}'}}; 
+    
+  template <class S> class Element 
+    {{'{'}} 
+  private: 
+      S x; 
+  /* ... */
+  {{'}'}}; 
+    
+  int main () 
+  {{'{'}}
+      Pair <Element<int>, Element<char> > p;   // note the space between '>' and '>' 
+      return 0; 
+      {{'}'}}-->
+  </ion-content>

@@ -1,0 +1,33 @@
+accordion {
+  
+    .pad1 {
+     padding: 0px;
+width: 100%;
+
+     padding-right: 0px;
+     margin: 0px;
+     margin-right: 0px;
+     right: 0px;
+    }
+
+    .card-header{
+        background-color: map-get($colors, primary);
+        color: black;
+        width: 100%;
+        
+    }
+  
+    .card-content {
+    background-color: rgb(26, 21, 21);
+        padding: 0px 0px; 
+        max-height: 0px;
+        color: white;
+    }
+    .list a.item
+    {
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    }
+}

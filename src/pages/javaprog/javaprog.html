@@ -1,0 +1,634 @@
+<!--
+  Generated template for the JavaprogPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="ownclr">
+    <button ion-button menuToggle  icon-only end side="right">
+        <ion-icon name="menu"></ion-icon>
+      </button>
+<ion-title>Java Programming Questions</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content   style="background-color: rgb(233, 233, 240)">
+  <h3 style="font-size: 18px;color: black;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ">Predict the output of below programs</h3>
+   
+         
+     
+
+  
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+         <ion-card-header style=" color:white;font-size: 16px">
+// filename Main.java <br> <br>
+class Test  {{'{'}} <br>
+    protected int x, y;  <br>
+    {{'}'}}  <br> <br>
+  
+class Main {{'{'}} <br>
+    public static void main(String args[])  {{'{'}}  <br>
+        Test t = new Test();  <br>
+        System.out.println(t.x + " " + t.y);  <br>
+        {{'}'}}  <br>
+    {{'}'}} </ion-card-header>
+    <ion-card-content style="color: rgb(62, 184, 58);font-size: 14px">
+            <br> <br>
+Output : <br> 
+
+0 0
+<br> <br>
+
+ 
+
+In Java, a protected member is accessible in all classes of same package and in inherited classes of other packages. Since Test and Main are in same package, no access related problem in the above program. <br><br>Also, the default constructors initialize integral variables as 0 in Java (See this GFact for more details). That is why we get output as 0 0.
+
+
+
+</ion-card-content> </ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+       <ion-card-header style=" color:white;font-size: 16px">
+// filename Test.java  <br> <br>
+class Test  {{'{'}}  <br>
+    public static void main(String[] args)  {{'{'}}  <br>
+        for(int i = 0; 1; i++)  {{'{'}} <br>
+            System.out.println("Hello");  <br>
+            break;  <br>
+            {{'}'}} <br>
+        {{'}'}} <br>
+    {{'}'}} 
+</ion-card-header>
+<ion-card-content style="color: rgb(62, 184, 58);font-size: 14px">
+        <br> <br>
+Output: Compiler Error <br> <br>
+There is an error in condition check expression of for loop. Java differs from C++(or C) here. C++ considers all non-zero values as true and 0 as false. Unlike C++, an integer value expression cannot be placed where a boolean is expected in Java. Following is the corrected program.
+</ion-card-content> </ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+       <ion-card-header style=" color:white;font-size: 16px">
+// filename Test.java  <br> <br>
+class Test  {{'{'}} <br>
+    public static void main(String[] args)  {{'{'}}  <br>
+        for(int i = 0; true; i++)  {{'{'}} <br>
+            System.out.println("Hello");  <br>
+            break;  <br>
+            {{'}'}} <br>
+        {{'}'}} <br>
+    {{'}'}}
+</ion-card-header>
+<ion-card-content style="color: rgb(62, 184, 58);font-size: 14px">
+Output:  <br>Hello 
+</ion-card-content> </ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+       <ion-card-header style=" color:white;font-size: 16px">
+
+// filename Main.java  <br> <br>
+class Main  {{'{'}} <br>
+    public static void main(String args[])  {{'{'}}   <br>
+        System.out.println(fun());  <br>
+        {{'}'}}  <br>
+    int fun()  {{'{'}} <br>
+        return 20;  <br>
+        {{'}'}} <br>
+    {{'}'}}
+</ion-card-header>
+<ion-card-content style="color: rgb(62, 184, 58);font-size: 14px">
+        <br> <br>
+Output:<br> Compiler Error <br> <br>
+Like C++, in Java, non-static methods cannot be called in a static method. If we make fun() static, then the program compiles fine without any compiler error. Following is the corrected program.
+<br> <br> <br>
+// filename Main.java  <br> <br>
+class Main  {{'{'}} <br>
+    public static void main(String args[])  {{'{'}} <br>
+        System.out.println(fun());  <br>
+        {{'}'}} <br>
+    static int fun()  {{'{'}} <br>
+        return 20;  <br>
+        {{'}'}} <br>
+    {{'}'}} <br> <br>
+// Output:   <br>20 
+</ion-card-content> </ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+       <ion-card-header style=" color:white;font-size: 16px">
+
+
+
+
+// filename Test.java  <br> <br>
+class Test  {{'{'}} <br>
+   public static void main(String args[])  {{'{'}}  <br>
+       System.out.println(fun());  <br>
+       {{'}'}}  <br>
+   static int fun()  {{'{'}} <br>
+       static int x= 0;  <br>
+       return ++x;  <br>
+       {{'}'}} <br>
+   {{'}'}}
+</ion-card-header>
+<ion-card-content style="color: rgb(62, 184, 58);font-size: 14px">
+Output: <br> <br> Compiler Error
+</ion-card-content> </ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+       <ion-card-header style=" color:white;font-size: 16px">
+Unlike C++, static local variables are not<br> allowed in Java. See this GFact for details.<br><br> We can have class static members to<br> count number of function calls and<br> other purposes that C++ local static<br> variables serve.<br><br> Following is the corrected program.
+<br> <br>
+class Test  {{'{'}}  <br>
+   private static int x;  <br>
+   public static void main(String args[])  {{'{'}} <br>
+       System.out.println(fun());  <br>
+       {{'}'}}  <br>
+   static int fun()  {{'{'}} <br>
+       return ++x;  <br>
+       {{'}'}} <br>
+       {{'}'}} 
+    </ion-card-header>
+    <ion-card-content style="color: rgb(62, 184, 58);font-size: 14px">
+// Output: <br> <br> 1
+
+
+
+
+</ion-card-content> </ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+       <ion-card-header style=" color:white;font-size: 16px">
+package main;  <br> <br>
+  
+class Base  {{'{'}} <br>
+    public void Print()  {{'{'}} <br>
+        System.out.println("Base");  <br>
+        {{'}'}}     <br>
+    {{'}'}}
+    <br> <br>
+class Derived extends Base  {{'{'}}   <br>
+    public void Print()  {{'{'}} <br>
+        System.out.println("Derived"); <br> 
+        {{'}'}} <br>
+    {{'}'}} <br> <br>
+  
+class Main {{'{'}} <br>
+    public static void DoPrint( Base o )  {{'{'}} <br>
+        o.Print();     <br>
+        {{'}'}} <br>
+    public static void main(String[] args)  {{'{'}} <br>
+        Base x = new Base();  <br>
+        Base y = new Derived();  <br>
+        Derived z = new Derived();  <br>
+        DoPrint(x);  <br>
+        DoPrint(y);  <br>
+        DoPrint(z);  <br>
+        {{'}'}}  <br>
+    {{'}'}}
+
+</ion-card-header>
+<ion-card-content style="color: rgb(62, 184, 58);font-size: 14px">
+Output:
+<br> <br>
+Base<br>
+Derived<br>
+Derived <br> <br>
+Predicting the first line of output is easy. We create an object of type Base and call DoPrint(). DoPrint calls the print function and we get the first line.
+<br> <br>
+DoPrint(y) causes second line of output. Like C++, assigning a derived class reference to a base class reference is allowed in Java. Therefore, the expression Base y = new Derived() is a valid statement in Java.
+<br><br> In DoPrint(), o starts referring to the same object as referred by y. Also, unlike C++, functions are virtual by default in Java. So, when we call o.print(), the print() method of Derived class is called due to run time polymorphism present by default in Java.
+
+
+
+ 
+<br> <br>
+DoPrint(z) causes third line of output, we pass a reference of Derived type and the print() method of Derived class is called again. The point to note here is: unlike C++, object slicing doesn’t happen in Java. Because non-primitive types are always assigned by reference.
+
+
+</ion-card-content> </ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+       <ion-card-header style=" color:white;font-size: 16px">
+
+package main; 
+<br> <br>  
+// filename Main.java  
+<br> <br>
+class Point  {{'{'}} <br>
+    protected int x, y;  <br>
+   
+    public Point(int _x, int _y)  {{'{'}} <br>
+        x = _x;  <br>
+        y = _y;  <br>
+        {{'}'}} <br>
+        {{'}'}} <br> <br>
+  
+public class Main  {{'{'}} <br>
+    public static void main(String args[])  {{'{'}} <br>
+      Point p = new Point();  <br>
+      System.out.println("x = " + p.x + ",<br> y = " + p.y);  <br>
+      {{'}'}} <br>
+    {{'}'}}
+</ion-card-header>
+<ion-card-content style="color: rgb(62, 184, 58);font-size: 14px">
+
+Output: <br> <br>
+Compiler Error <br> <br>
+In the above program, there are no access permission issues because the Test and Main are in same package and protected members of a class can be accessed in other classes of same package. The problem with the code is: there is not default constructor in Point.
+<br><br> Like C++, if we write our own parametrized constructor then Java compiler doesn’t create the default constructor. So there are following two changes to Point class that can fix the above program. <br> <br>
+1) Remove the parametrized constructor. <br>
+2) Add a constructor without any parameter. <br>
+Java doesn’t support default arguments, so that is not an option. <br>
+</ion-card-content> </ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+       <ion-card-header style=" color:white;font-size: 16px">
+// filename: Test.java  <br> <br>
+class Test  {{'{'}} <br>
+    int x  = 10;    <br>
+    public static void main(String[] args)  {{'{'}}     <br>
+         Test t = new Test();  <br>
+         System.out.println(t.x);  <br>
+         {{'}'}} <br>
+    {{'}'}} <br> <br>
+
+
+The program works fine and prints 10.<br> Unlike C++, in Java, members can initializ<br>ed with declaration of class. This<br> initialization works well when the<br> initialization value is available and <br>the initialization can be put on one<br> line (See this for more details).<br><br> For example, the following program also<br> works fine.
+<br> <br>
+// filename: Test.java  <br> <br>
+class Test  {{'{'}} <br>
+    int y = 2;  <br>
+    int x  = y+2;    <br>
+    public static void main(String[] args)  {{'{'}}   <br>
+         Test m = new Test();  <br>
+         System.out.println("x = " + m.x + ",<br> y = " + m.y);  <br>
+         {{'}'}} <br>
+    {{'}'}}
+
+</ion-card-header>
+<ion-card-content style="color: rgb(62, 184, 58);font-size: 14px">
+Output of the above program is “x = 4, y = 2”.<br><br> y is initialized first, then x is initialized as y + 2. So the value of x becomes 4.
+</ion-card-content> </ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+       <ion-card-header style=" color:white;font-size: 16px">
+What happen when a member is initialized<br> in class declaration and constructor both?<br><br> Consider the following program.
+<br> <br>
+// filename: Test.java  <br> <br>
+public class Test   <br>
+{{'{'}}      <br>
+    int x = 2;  <br>
+    Test(int i)  {{'{'}} x = i; {{'}'}}  <br>
+    public static void main(String[] args)  {{'{'}}     <br>
+         Test t = new Test(5);  <br>
+         System.out.println("x = " + t.x);  <br>
+         {{'}'}} <br>
+    {{'}'}}
+
+</ion-card-header>
+<ion-card-content style="color: rgb(62, 184, 58);font-size: 14px">
+Output of the above program is “x = 5”.<br><br> The initialization with class declaration in Java is like initialization using Initializer List in C++. So, in the above program, the value assigned inside the constructor overwrites the previous value of x which is 2, and x becomes 5.
+</ion-card-content> </ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+       <ion-card-header style=" color:white;font-size: 16px">
+As an exercise, predict the output of<br> following program.
+<br> <br>
+// filename: Test2.java  <br> <br>
+class Test1  {{'{'}}    <br>
+    Test1(int x)  {{'{'}} <br>
+        System.out.println("Constructor called "<br> + x);  <br>
+        {{'}'}} <br>
+    {{'}'}} <br> <br>
+   
+// This class contains an instance of Test1   <br> <br>
+class Test2  {{'{'}}     <br>
+    Test1 t1 = new Test1(10);    
+    <br>   
+    Test2(int i)  {{'{'}} t1 = new Test1(i); {{'}'}}
+    <br>
+    public static void main(String[] args)  {{'{'}}     
+    <br> Test2 t2 = new Test2(5); 
+    <br> {{'}'}} <br>
+    {{'}'}}
+</ion-card-header> </ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+       <ion-card-header style=" color:white;font-size: 16px">
+// file name: Main.java 
+<br> <br>
+class Base  {{'{'}} <br>
+    protected void foo()  {{'{'}}   <br>
+    {{'}'}} <br>
+class Derived extends Base  {{'{'}} <br>
+    void foo()  {{'{'}}  {{'}'}}  <br>
+    {{'}'}} <br>
+public class Main  {{'{'}} <br>
+    public static void main(String args[])  {{'{'}}  <br>
+        Derived d = new Derived();  <br>
+        d.foo();  <br>
+        {{'}'}} <br>
+    {{'}'}}
+</ion-card-header>
+<ion-card-content style="color: rgb(62, 184, 58);font-size: 14px">
+
+Output: Compiler Error <br> <br>
+foo() is protected in Base and default in Derived. Default access is more restrictive. When a derived class overrides a base class function, more restrictive access can’t be given to the overridden function. If we make foo() public, then the program works fine without any error.
+<br><br> The behavior in C++ is different. C++ allows to give more restrictive access to derived class methods.
+</ion-card-content> </ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+       <ion-card-header style=" color:white;font-size: 16px">
+
+// file name: Main.java 
+<br> <br>
+class Complex  {{'{'}} <br>
+    private double re, im;  <br>    
+    public String toString()  {{'{'}} <br>
+        return "(" + re + " + " + im + "i)"; <br> 
+        {{'}'}} <br>
+    Complex(Complex c)  {{'{'}} <br>
+        re = c.re;  <br>
+        im = c.im;  <br>
+        {{'}'}} <br>
+    {{'}'}} <br> <br>
+  
+public class Main  {{'{'}} <br>
+    public static void main(String[] args)  {{'{'}} <br>
+        Complex c1 = new Complex();  <br>
+        Complex c2 = new Complex(c1);  <br>
+        System.out.println(c2);  <br>
+        {{'}'}} <br>
+    {{'}'}} 
+
+</ion-card-header>
+<ion-card-content style="color: rgb(62, 184, 58);font-size: 14px">
+Output: <br> <br> Compiler Error in line “Complex c1 = new Complex();” <br> <br>
+In Java, if we write our own copy constructor or parameterized constructor, then compiler doesn’t create the default constructor. This behavior is same as C++.
+</ion-card-content> </ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+       <ion-card-header style=" color:white;font-size: 16px">
+
+
+// Main.java  <br> <br>
+public class Main  <br>
+{{'{'}} <br>
+    public static void gfg(String s)  <br>
+    <br>    {{'{'}}    
+    <br>System.out.println("String"); 
+    <br>{{'}'}}
+    <br>  public static void gfg(Object o) 
+    <br>  {{'{'}}
+    <br>System.out.println("Object"); 
+    <br>{{'}'}}
+    <br> <br>
+    <br>    public static void main(String args[]) 
+    <br>{{'{'}}
+    <br>gfg(null);  <br>
+    }  <br>
+    {{'}'}} //end class 
+</ion-card-header>
+<ion-card-content style="color: rgb(62, 184, 58);font-size: 14px">
+
+Output: <br> <br>
+
+String <br> <br>
+Explanation : In case of method overloading, the most specific method is chosen at compile time. As ‘java.lang.String’ is a more specific type than ‘java.lang.Object’. In this case the method which takes ‘String’ as a parameter is choosen.
+</ion-card-content> </ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+       <ion-card-header style=" color:white;font-size: 16px">
+
+// Main.java  <br> <br>
+public class Main  <br>
+{{'{'}} <br>
+<br>    public static void gfg(String s) 
+<br>{{'{'}}     
+<br>    System.out.println("String"); 
+<br>    {{'}'}}
+<br>public static void gfg(Object o) 
+<br>{{'{'}} 
+<br>    System.out.println("Object"); 
+<br>    {{'}'}}
+<br>public static void gfg(Integer i) 
+<br>{{'{'}} 
+<br>    System.out.println("Integer"); 
+<br>    {{'}'}}
+<br> <br>
+<br>public static void main(String args[]) 
+<br>{{'{'}} 
+<br>    gfg(null); 
+<br>    {{'}'}}
+<br>{{'}'}}//end class 
+
+</ion-card-header>
+<ion-card-content style="color: rgb(62, 184, 58);font-size: 14px">
+Output:
+<br> <br>
+Compile Error at line 19. <br> <br>
+Explanation: In this case of method Overloading, the most specific method is choosen at compile time.
+<br> <br>As ‘java.lang.String’ and ‘java.lang.Integer’ is a more specific type than ‘java.lang.Object’,but between ‘java.lang.String’ and ‘java.lang.Integer’ none is more specific.
+<br> <br>In this case the Java is unable to decide which method to call.
+</ion-card-content> </ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+       <ion-card-header style=" color:white;font-size: 16px">
+
+// Main.java  <br> <br>
+public class Main  <br>
+{{'{'}} <br>
+<br>    public static void main(String args[]) 
+<br>{{'{'}}
+<br>    String s1 = "abc"; 
+<br>    String s2 = s1; 
+<br>    s1 += "d"; 
+<br>    System.out.println(s1 + " " + s2 + " " +<br> (s1 == s2)); 
+  
+<br>    StringBuffer sb1 = new StringBuffer("abc"); 
+<br>    StringBuffer sb2 = sb1; 
+<br>    sb1.append("d"); 
+<br>    System.out.println(sb1 + " " + sb2 + " " +<br> (sb1 == sb2)); 
+<br>    {{'}'}}
+<br>{{'}'}} //end class 
+</ion-card-header>
+<ion-card-content style="color: rgb(62, 184, 58);font-size: 14px">
+Output:
+<br> 
+abcd abc false <br>
+abcd abcd true <br>
+Explanation :<br> In Java, String is immutable and string buffer is mutable. <br> <br>
+So string s2 and s1 both pointing to the same string abc. And, after making the changes the string s1 points to abcd and s2 points to abc, hence false. While in string buffer, both sb1 and sb2 both point to the same object.
+<br><br> Since string buffer are mutable, making changes in one string also make changes to the other string. So both string still pointing to the same object after making the changes to the object (here sb2).
+</ion-card-content> </ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+       <ion-card-header style=" color:white;font-size: 16px">
+// Main.java  <br> <br>
+public class Main  <br>
+{{'{'}} <br>
+    public static void main(String args[])  <br>
+    {{'{'}} <br>
+        short s = 0;  <br>
+        int x = 07;  <br>
+        int y = 08;  <br>
+        int z = 112345;  <br>
+  
+        s += z;  <br>
+        System.out.println("" + x + y + s);  <br>
+        {{'}'}} <br>
+    {{'}'}} //end class 
+</ion-card-header>
+<ion-card-content style="color: rgb(62, 184, 58);font-size: 14px">
+Output:
+<br> 
+Compile Error at line 8 <br> <br>
+Explanation: <br>
+1. In Line 12 The “” in the println causes the numbers to be automatically cast as strings. So it doesn’t do addition, but appends together as string.<br><br>
+2. In Line11 the += does an automatic cast to a short. However the number 123456 can’t be contained within a short, so you end up with a negative value (-7616).<br><br>
+3. Those other two are red herrings however as the code will never compile due to line 8. Any number beginning with zero is treated as an octal number (which is 0-7).
+</ion-card-content> </ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+       <ion-card-header style=" color:white;font-size: 16px">
+
+
+class First  <br>
+{{'{'}} <br>
+    public First()  {{'{'}}  System.out.println("a"); {{'}'}} <br>
+    {{'}'}} <br> <br>
+   
+class Second extends First  <br>
+{{'{'}} <br>
+    public Second()   {{'{'}} System.out.println("b"); {{'}'}} <br>
+    {{'}'}} <br> <br>
+   
+class Third extends Second  <br>
+{{'{'}} <br>
+    public Third()    {{'{'}} System.out.println("c"); {{'}'}} <br>
+    {{'}'}} <br> <br>
+   
+public class MainClass  <br>
+{{'{'}} <br>
+<br>    public static void main(String[] args) 
+<br>{{'{'}}
+<br>    Third c = new Third(); 
+<br>   {{'}'}}
+<br>  {{'}'}}
+
+</ion-card-header>
+<ion-card-content style="color: rgb(62, 184, 58);font-size: 14px">
+Output:
+<br> <br>
+a <br>
+b <br>
+c <br>
+<br>
+Explanation: <br>
+While creating a new object of ‘Third’ type, before calling the default constructor of Third class, the default constructor of super class is called i.e, Second class and then again before the default constructor of super class, default constructor of First class is called. And hence gives such output.
+</ion-card-content> </ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+       <ion-card-header style=" color:white;font-size: 16px">
+
+
+
+class First  <br>
+{{'{'}}  <br>
+    int i = 10; <br> 
+   
+    public First(int j) <br> 
+    {{'{'}} <br>
+        System.out.println(i);   <br>
+        this.i = j * 10;  <br>
+        {{'}'}} <br>
+    {{'}'}} <br> <br>
+   
+class Second extends First  <br>
+{{'{'}} <br>
+    public Second(int j)  <br>
+    {{'{'}} <br>
+        super(j); <br>  
+        System.out.println(i);  <br> 
+        this.i = j * 20;  <br>
+        {{'}'}} <br>
+    {{'}'}}
+    <br> <br>
+public class MainClass  <br>
+{{'{'}} <br>
+    public static void main(String[] args)  <br>
+    {{'{'}}  <br>
+        Second n = new Second(20);   <br>
+        System.out.println(n.i);  <br>
+        {{'}'}} <br>
+    {{'}'}} 
+
+</ion-card-header>
+<ion-card-content style="color: rgb(62, 184, 58);font-size: 14px">
+Output:
+<br> <br>
+10 <br>
+200 <br>
+400 <br>
+<br>
+Explanation: <br>
+Since in ‘Second’ class it doesn’t have its own ‘i’, the variable is inherited from the super class. Also, the constructor of parent is called when we create an object of Second.
+</ion-card-content> </ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+       <ion-card-header style=" color:white;font-size: 16px">
+
+import java.util.*;   <br> <br>
+class I   <br>
+{{'{'}} <br>
+<br>    public static void main (String[] args)  
+<br>{{'{'}}
+<br>    Object i = new ArrayList().iterator();  
+<br>    System.out.print((i instanceof List) + ", ");  
+<br>    System.out.print((i instanceof Iterator) +<br> ", ");  
+<br>    System.out.print(i instanceof ListIterator);  
+<br>    {{'}'}}
+<br>{{'}'}}
+
+</ion-card-header>
+<ion-card-content style="color: rgb(62, 184, 58);font-size: 14px">
+Output:
+<br> <br>
+false, true, false <br> <br>
+Explanation: <br>
+The iterator() method returns an iterator over the elements in the list in proper sequence, it doesn’t return a List or a ListIterator object. A ListIterator can be obtained by invoking the listIterator method.
+</ion-card-content> </ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+       <ion-card-header style=" color:white;font-size: 16px">
+
+class ThreadEx extends Thread  <br>
+{{'{'}} <br>
+    public void run()  <br>
+    {{'{'}}  <br>
+        System.out.print("Hello...");  <br>
+        {{'}'}} <br>
+    public static void main(String args[])  <br>
+    {{'{'}} <br>
+        ThreadEx T1 = new ThreadEx();  <br>
+        T1.start();  <br>
+        T1.stop();  <br>
+        T1.start();  <br>
+        {{'}'}} <br>
+    {{'}'}}
+</ion-card-header>
+<ion-card-content style="color: rgb(62, 184, 58);font-size: 14px">
+
+
+Output:
+<br> <br>
+Run Time Exception
+<br> <br>
+Explanation: <br>
+Exception in thread “main” java.lang.IllegalThreadStateException at java.lang.Thread.start <br> <br>
+Thread cannot be started twice.
+</ion-card-content> </ion-card>
+
+
+</ion-content>

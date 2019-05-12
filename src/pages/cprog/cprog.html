@@ -1,0 +1,587 @@
+<!--
+  Generated template for the CprogPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-navbar color="ownclr">
+        <button ion-button menuToggle  icon-only end side="right">
+            <ion-icon name="menu"></ion-icon>
+          </button>
+    <ion-title>C Programming Questions</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content style="background-color: rgb(233, 233, 240)">
+  <h3 style="font-size: 18px;color: black;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ">Predict the output of below programs</h3>
+  
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+    <ion-card-header style=" color:white;font-size: 16px">
+ #include"stdio.h"<br>
+    int main() <br>
+    {{'{'}} <br>
+       int n; <br>
+       for(n = 7; n!=0; n--) <br>
+         printf("n = %d", n--); <br>
+       getchar(); <br>
+       return 0; <br>
+       {{'}'}} <br>
+      </ion-card-header>
+      <ion-card-content style="color: rgb(62, 184, 58);font-size: 14px">
+    Output:<br>Above program goes in infinite loop because n is never zero when loop condition (n != 0) is checked.  
+  </ion-card-content> </ion-card>
+  <ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+      <ion-card-header style=" color: white;font-size: 16px">
+  #include"stdio.h"<br>
+      int main() <br>
+      {{'{'}} <br>
+         printf("%x", -1<<1); <br>
+         getchar(); <br>
+         return 0; <br>
+         {{'}'}} <br>
+        </ion-card-header>
+        <ion-card-content style="color:  rgb(62, 184, 58);font-size: 15px">     
+            Output is dependent on the compiler. For 32 bit compiler it would be fffffffe and for 16 bit it would be fffe.
+</ion-card-content></ion-card>
+     
+             
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+    <ion-card-header style="color: white;font-size: 16px">
+          #include "stdlib.h"<br>
+            #include "stdio.h" <br>
+            enum {{'{'}}false, true{{'}'}};<br> 
+            int main() <br>
+            {{'{'}}<br>
+               int i = 1; <br>
+               do<br>
+               {{'{'}} <br>
+                  printf("%d\n", i); <br>
+                  i++; <br>
+                  if (i < 15) <br>
+                    continue; <br>
+                {{'}'}} while (false); <br>
+              
+               getchar(); <br>
+               return 0; <br>
+               {{'}'}}<br>
+        
+              </ion-card-header>
+              <ion-card-content style="color:  rgb(62, 184, 58);font-size: 15px">    
+            Output: 1<br>
+            Explanation: The do wile loop checks condition after each iteration. So after continue statement, control transfers to the statement while(false). Since the condition is false ‘i’ is printed only once.
+          </ion-card-content></ion-card>
+          <ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+              <ion-card-header style="color: white;font-size: 16px">
+            char *getString() <br>
+            {{'{'}} <br>
+               char *str = "Nice test for strings"; <br>
+               return str; <br>
+            {{'}'}}<br><br>
+              
+            int main() <br>
+            {{'{'}}<br>
+               printf("%s", getString()); <br>
+               getchar(); <br>
+               return 0; <br>
+               {{'}'}}<br>
+              </ion-card-header>
+              <ion-card-content style="color:  rgb(62, 184, 58);font-size: 15px">    
+            
+            Output: “Nice test for strings”<br>
+            The above program works because string constants are stored in Data Section (not in Stack Section). So, when getString returns *str is not lost.
+
+
+
+          </ion-card-content></ion-card>
+          <ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+              <ion-card-header style="color: white;font-size: 16px">
+            char *getString() <br>
+            {{'{'}} <br>
+                char str[] = "Will I be printed?";     <br>
+                return str; <br>
+                {{'}'}}<br><br>
+            int main() <br>
+            {{'{'}}<br>
+                printf("%s", getString()); <br>
+                getchar(); <br>
+                {{'}'}}<br>
+              </ion-card-header>
+              <ion-card-content style="color:  rgb(62, 184, 58);font-size: 15px">    
+            
+            Output: Some garbage value<br>
+            The above program doesn’t work because array variables are stored in Stack Section. So, when getString returns values at str are deleted and str becomes dangling pointer.
+            
+          </ion-card-content></ion-card>
+          <ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+              <ion-card-header style="color: white;font-size: 16px">        
+            
+            int main() <br>
+            {{'{'}}<br>
+                static int i=5; <br>
+                if(--i)  {{'{'}} <br>
+                    main(); <br>
+                    printf("%d ",i); <br>
+                    {{'}'}}    <br>
+                    {{'}'}}<br>
+           
+                  </ion-card-header>
+                  <ion-card-content style="color:  rgb(62, 184, 58);font-size: 15px">    
+            Output: 0 0 0 0<br>
+            Explanation: Since i is a static variable and is stored in Data Section, all calls to main share same i.
+         
+          </ion-card-content></ion-card>
+          <ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+              <ion-card-header style="color: white;font-size: 16px">
+            int main() <br>
+            {{'{'}} <br>
+                static int var = 5; <br>
+                printf("%d ",var--); <br>
+                if(var) <br>
+                    main();                    <br>
+             {{'}'}}<br>
+          
+            </ion-card-header>
+            <ion-card-content style="color:  rgb(62, 184, 58);font-size: 15px">    
+            Output: 5 4 3 2 1<br>
+            Explanation: Same as previous question. The only difference here is, sequence of calling main and printf is changed, therefore different output.
+            
+       
+          </ion-card-content></ion-card>
+          <ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+              <ion-card-header style="color: white;font-size: 16px">
+            int main() 
+            <br>   {{'{'}} 
+            <br>int x; 
+            <br>printf("%d",scanf("%d",&x));  
+            <br> /* Suppose that input value given  
+            <br>    for above scanf is 20 */
+            <br>return 1; 
+            <br>{{'}'}}  
+              </ion-card-header>
+              <ion-card-content style="color:  rgb(62, 184, 58);font-size: 15px">    
+            
+            Output: -1
+            <br>scanf returns the no. of inputs it has successfully read.
+            
+          </ion-card-content></ion-card>
+          <ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+              <ion-card-header style="color: white;font-size: 16px">         
+            
+            # include "stdio.h"
+            <br>  int main() 
+            <br>{{'{'}}
+            <br>int i=0; 
+            <br>   for(i=0; i<20; i++) 
+            <br>    {{'{'}} 
+            <br> switch(i) 
+            <br>  {{'{'}} 
+            <br>   case 0: 
+            <br>     i+=5; 
+            <br>   case 1: 
+            <br>     i+=2; 
+            <br>   case 5: 
+            <br>     i+=5; 
+            <br>   default:                
+            <br>     i+=4; 
+            <br>     break; 
+            <br>     {{'}'}} 
+            <br> printf("%d  ", i); 
+            <br> {{'}'}} 
+            <br><br>
+            <br>  getchar(); 
+            <br>  return 0; 
+            <br>  {{'}'}}   
+              </ion-card-header>
+              <ion-card-content style="color:  rgb(62, 184, 58);font-size: 15px">    
+            
+            Output: 16 21<br>
+            Explanation:<br>
+            Initially i = 0. Since case 0 is true i becomes 5, and since there is no break statement till last statement of switch block, i becomes 16. Now in next iteration no case is true, so execution goes to default and i becomes 21.
+            <br><br>
+            In C, if one case is true switch block is executed until it finds break statement. If no break statement is present all cases are executed after the true case.
+          </ion-card-content></ion-card>
+          <ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+              <ion-card-header style="color: white;font-size: 16px">
+         
+         
+
+            #include "stdio.h"
+            <br>      int main() 
+            <br>  {{'{'}}
+            <br>printf("%d", main); 
+            <br>getchar(); 
+            <br>return 0; 
+            <br>{{'}'}}
+              </ion-card-header>
+              <ion-card-content style="color:  rgb(62, 184, 58);font-size: 15px">                
+              
+              Output: Address of function main.<br>
+              Explanation: Name of the function is actually a pointer variable to the function and prints the address of the function. Symbol table is implemented like this.              
+              <br><br>    struct 
+              <br>              {{'{'}}
+              <br>char *name;
+              <br>int (*funcptr)();
+              <br> {{'}'}}
+              <br>    symtab[] = {{'{'}}
+              <br>"func", func,
+              <br>        "anotherfunc", anotherfunc,
+              <br>{{'}'}}; 
+                </ion-card-content></ion-card>
+               
+                
+              <ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+                  <ion-card-header style="color: white;font-size: 16px">       
+       
+                # include"stdio.h"<br>
+                  # include"stdlib.h"<br>
+                    
+                  void fun(int *a) <br>
+                  {{'{'}} <br>
+                  <br>                      a = (int*)malloc(sizeof(int)); 
+                  <br>   {{'}'}}
+                  <br>    
+                  <br>    int main() 
+                  <br>{{'{'}} 
+                  <br>int *p; 
+                  <br>fun(p); 
+                  <br>*p = 6; 
+                  <br>printf("%d\n",*p); 
+                  <br> 
+                  <br>getchar(); 
+                  <br>return(0); 
+                  <br>{{'}'}} 
+                
+                    </ion-card-header>
+                    <ion-card-content style="color:  rgb(62, 184, 58);font-size: 15px">                      
+                  It does not work. Try replacing “int *p;” with “int *p = NULL;” and it will try to dereference a null pointer.
+                  <br><br> 
+                  This is because fun() makes a copy of the pointer, so when malloc() is called, it is setting the copied pointer to the memory location, not p. p is pointing to random memory before and after the call to fun(), and when you dereference it, it will crash.
+                  <br><br>
+                  If you want to add memory to a pointer from a function, you need to pass the address of the pointer (ie. double pointer).
+       
+                </ion-card-content></ion-card>
+                <ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+                    <ion-card-header style="color: white;font-size: 16px">
+
+
+
+                      <br>    #include "stdio.h"
+                      <br> int main() 
+                      <br>     {{'{'}}
+                      <br>int i; 
+                      <br>       i = 1, 2, 3;          
+                      <br>printf("i = %d\n", i); 
+                      <br>
+                      <br>getchar(); 
+                      <br>     return 0; 
+                      <br> {{'}'}}
+                   
+                      </ion-card-header>
+                      <ion-card-content style="color:  rgb(62, 184, 58);font-size: 15px">       
+                    Output: 1<br>
+                    The above program prints 1. Associativity of comma operator is from left to right, but = operator has higher precedence than comma operator.
+                    <br><br> Therefore the statement i = 1, 2, 3 is treated as (i = 1), 2, 3 by the compiler.
+
+                  </ion-card-content></ion-card>
+                  <ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+                      <ion-card-header style="color: white;font-size: 16px">
+
+
+                    #include "stdio.h"<br>
+                      int main() <br>
+                      {{'{'}}<br>
+                          int first = 50, second = 60, third; <br>
+                          third = first /* Will this comment work? */<br> + second; <br>
+                          printf("%d /* And this? */ \n", third); <br>
+                             
+                          getchar(); <br>
+                          return 0; <br>
+                          {{'}'}}<br>
+                        </ion-card-header>
+                        <ion-card-content style="color:  rgb(62, 184, 58);font-size: 15px">    
+                      
+                      Output: 110 /* And this? */<br>
+                      Explanation: Compiler removes everything between “/*” and “*/” if they are not present inside double quotes (“”).
+
+                    </ion-card-content></ion-card>
+                    <ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+                        <ion-card-header style="color: white;font-size: 16px">
+
+                      
+#include"stdio.h"<br>
+int main() <br>
+{{'{'}} <br>
+    struct site <br>
+    {{'{'}}<br>
+        char name[] = "Fresher Interview"; <br>
+        int no_of_pages = 200; <br>
+        {{'}'}}; <br>
+    struct site *ptr; <br>
+    printf("%d",ptr->no_of_pages); <br>
+    printf("%s",ptr->name);  <br>
+    getchar(); <br>
+    return 0; <br>
+    {{'}'}} <br>
+  </ion-card-header>
+  <ion-card-content style="color:  rgb(62, 184, 58);font-size: 15px">    
+
+Output:<br>
+Compiler error
+<br><br>
+Explanation:<br>
+Note the difference between structure/union declaration and variable declaration. When you declare a structure, you actually declare a new data type suitable for your purpose. So you cannot initialize values as it is not a variable declaration but a data type declaration.
+
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+    <ion-card-header style="color: white;font-size: 16px">
+
+   
+#include "stdio.h"<br>
+  int fun(int n) <br>
+  {{'{'}}<br>
+      int i, j, sum = 0; <br>
+      for(i = 1;i<=n;i++) <br>
+          for(j=i;j<=i;j++) <br>
+              sum=sum+j; <br>
+      return(sum); <br>
+      {{'}'}} <br>
+      <br>
+  int main()<br> 
+  {{'{'}} <br>
+      printf("%d", fun(15)); <br>
+      getchar(); <br>
+      return 0; <br>
+      {{'}'}} 
+    </ion-card-header>
+    <ion-card-content style="color:  rgb(62, 184, 58);font-size: 15px">     
+  
+  Output: 120<br><br>
+  Explanation: fun(n) calculates sum of first n integers or we can say it returns n(n+1)/2.
+  
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+    <ion-card-header style="color: white;font-size: 16px">
+  
+  #include "stdio.h" <br>
+  int main() <br>
+  {{'{'}} <br>
+      int c = 5, no = 1000; <br>
+      do    {{'{'}}<br>
+          no /= c; <br>
+          {{'}'}} while(c--); <br>
+   
+      printf ("%d\n", no);<br> 
+      return 0; <br>
+      {{'}'}}<br>
+
+    </ion-card-header>
+    <ion-card-content style="color:  rgb(62, 184, 58);font-size: 15px">      
+  Output: Exception – Divide by zero<br><br>
+  
+  Explanation: There is a bug in the above program. It goes inside the do-while loop for c = 0 also. Be careful when you are using do-while loop like this!!
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+    <ion-card-header style="color: white;font-size: 16px">
+
+  int main() <br>
+  {{'{'}}<br>
+      unsigned int i=10;<br> 
+      while(i-- >= 0) <br>
+          printf("%u ",i); <br>
+      return 0; <br>
+      {{'}'}}<br>
+    </ion-card-header>
+    <ion-card-content style="color:  rgb(62, 184, 58);font-size: 15px">     
+  
+  Output:<br><br>
+  9 8 7 6 5 4 3 2 1 0 4294967295 4294967294 …… (on a machine where int is 4 bytes long)<br>
+  9 8 7 6 5 4 3 2 1 0 65535 65534 …. (on a machine where int is 2 bytes long)
+  <br><br>
+  Explanation:<br><br>
+  Let us examine the condition of while loop. It is obvious that as far as the condition of while loop is met, printf will be executed. There are two operators in the condition of while loop: post-decrement operator and comparison operator.
+  <br><br> From operator precedence, we know that unary operator post-decrement has higher priority than comparison operator. But due to post-decrement property, the value of i will be decremented only after it had been used for comparison.
+  <br><br>   So at the first iteration, the condition is true because 10>=0 and then i is decremented. Therefore 9 will be printed. Similarly the loop continues and the value of i keeps on decrementing. Let us see what what happen when condition of while loop becomes 0 >= 0. At this time, condition is met and i is decremented.
+  <br><br>Since i is unsigned integer, the roll-over happens and i takes the value of the highest +ve value an unsigned int can take. So i is never negative. Therefore, it becomes infinite while loop.
+  <br><br>
+  As a side note, if i was signed int, the while loop would have been terminated after printing the highest negative value.
+
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+    <ion-card-header style="color: white;font-size: 16px">
+  int main() <br>
+  {{'{'}} <br>
+      int x,y=2,z,a; <br>
+      if ( x = y%2)  <br>
+           z =2; <br>
+      a=2; <br>
+      printf("%d %d ",z,x); <br>
+      return 0; <br>
+      {{'}'}}
+
+    </ion-card-header>
+    <ion-card-content style="color:  rgb(62, 184, 58);font-size: 15px">      
+  Output:<br>
+  < some garbage value of z > 0
+  <br><br>
+  Explanation:<br>
+  This question has some stuff for operator precedence. If the condition of if is met, then z will be initialized to 2 otherwise z will contain garbage value. But the condition of if has two operators: assignment operator and modulus operator.
+  <br><br> The precedence of modulus is higher than assignment.
+  <br><br> So y%2 is zero and it’ll be assigned to x. So the value of x becomes zero which is also the effective condition for if. And therefore, condition of if is false.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+    <ion-card-header style="color: white;font-size: 16px">
+ 
+  
+     
+  int main()<br> 
+  {{'{'}} <br>
+      int a[10]; <br>
+      printf("%d",*a+1-*a+3); <br>
+      return 0; <br>
+      {{'}'}}
+    </ion-card-header>
+    <ion-card-content style="color:  rgb(62, 184, 58);font-size: 15px">    
+  
+  Output: 4
+  <br><br>
+  Explanation:<br>
+  From operator precedence, de-reference operator has higher priority than addition/subtraction operator. So de-reference will be applied first. Here, a is an array which is not initialized.
+  <br><br> If we use a, then it will point to the first element of the array. Therefore *a will be the first element of the array.
+  <br><br> Suppose first element of array is x, then the argument inside printf becomes as follows. It’s effective value is 4.
+  <br><br>
+  x + 1 – x + 3 = 4
+  
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+    <ion-card-header style="color: white;font-size: 16px">
+  
+  #define prod(a,b) a*b <br>
+  int main() <br>
+  {{'{'}} <br>
+      int x=3,y=4;<br> 
+      printf("%d",prod(x+2,y-1));<br> 
+      return 0; <br>
+      {{'}'}}
+    </ion-card-header>
+    <ion-card-content style="color:  rgb(62, 184, 58);font-size: 15px">    
+  Output:<br>
+  10<br><br>
+  
+  Explanation:
+  <br>  This program deals with macros, their side effects and operator precedence. Here prod is a macro which multiplies its two arguments a and b. Let us take a closer look.
+  <br><br>
+  prod(a, b) = a*b<br>
+  prod(x+2, y-1) = x+2*y-1 = 3+2*4-1 = 3+8-1=10<br><br>
+  
+  If the programmer really wanted to multiply x+2 and y-1, he should have put parenthesis around a and b as follows.
+  <br><br>
+  prod(a,b) = (a)*(b)
+  <br><br>
+  This type of mistake in macro definition is called – macro side-effects.
+  
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+    <ion-card-header style="color: white;font-size: 16px">
+  
+  int main() <br>
+  {{'{'}}<br>
+      unsigned int i=65000; <br>
+      while ( i++ != 0 ); <br>
+      printf("%d",i); <br>
+      return 0; <br>
+      {{'}'}} 
+    </ion-card-header>
+    <ion-card-content style="color:  rgb(62, 184, 58);font-size: 15px">    
+  
+  Output:<br>
+  1
+  <br><br>
+  Explanation:<br>
+  It should be noticed that there’s a semi-colon in the body of while loop. So even though, nothing is done as part of while body, the control will come out of while only if while condition isn’t met.
+  <br><br> In other words, as soon as i inside the condition becomes 0, the condition will become false and while loop would be over. But also notice the post-increment operator in the condition of while. So first i will be compared with 0 and i will be incremented no matter whether condition is met or not. 
+  <br><br>Since i is initialized to 65000, it will keep on incrementing till it reaches highest positive value. After that roll over happens, and the value of i becomes zero. The condition is not met, but i would be incremented i.e. to 1. Then printf will print 1.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+    <ion-card-header style="color: white;font-size: 16px">
+  
+  
+  int main() <br>
+  {{'{'}} <br>
+      int i=0; <br>
+      while ( +(+i--) != 0) <br>
+          i-=i++; <br>
+      printf("%d",i); <br>
+      return 0; <br>
+      {{'}'}} 
+ 
+    </ion-card-header>
+    <ion-card-content style="color:  rgb(62, 184, 58);font-size: 15px">    
+  Output:<br>
+  -1
+
+  <br><br>  
+  Explanation:<br>
+  Let us first take the condition of while loop. There are several operator there. Unary + operator doesn’t do anything. So the simplified condition becomes (i–) != 0. So i will be compared with 0 and then decremented no matter whether condition is true or false.
+  <br><br> Since i is initialized to 0, the condition of while will be false at the first iteration itself but i will be decremented to -1. The body of while loop will not be executed. And printf will print -1.
+  <br><br>
+  So it wasn’t that scary as it seemed to be!
+  
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+    <ion-card-header style="color: white;font-size: 16px">
+  
+  int main() 
+  <br>  {{'{'}} 
+  <br>float f=5,g=10; 
+  <br>enum   {{'{'}}i=10,j=20,k=50   {{'}'}}; 
+  <br>printf("%d\n",++k); 
+  <br>printf("%f\n",f<<2); 
+  <br> printf("%lf\n",f%g); 
+  <br> printf("%lf\n",fmod(f,g)); 
+  <br>return 0; 
+  <br>{{'}'}}
+
+    </ion-card-header>
+    <ion-card-content style="color:  rgb(62, 184, 58);font-size: 15px">    
+  Output:
+  <br>  Program will not compile and give 3 errors
+  <br><br>
+  Explanation:<br>
+  Here, i, j and k are inside the enum and therefore, they are like constants. In other words, if want to use 10 anywhere in the program, we can use i instead.<br><br> In the first printf, the value of k is being modified which is not allowed because it’s enum constant.<br><br> In the second printf, left-shift operator is being applied on a float which is also not allowed.<br><br> Similarly, in the third printf, modulus operator is being applied on float f and g which is also not allowed.
+  
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+    <ion-card-header style="color: white;font-size: 16px">
+  
+     
+  int main() <br>
+  {{'{'}} <br>
+  <br>      int i=10; 
+  <br>void pascal f(int,int,int); 
+  <br>f(i++, i++, i++); 
+  <br>printf(" %d",i); 
+  <br>return 0; 
+  <br>{{'}'}}<br> 
+  void pascal f(integer :i,integer:j,integer :k)<br> 
+  {{'{'}}<br>
+  <br>    write(i,j,k); 
+  <br>{{'}'}} 
+  </ion-card-header>
+  <ion-card-content style="color:  rgb(62, 184, 58);font-size: 15px">    
+  
+  Output:<br>
+  Program will give compile-time error
+  <br><br>
+  Explanation:<br>
+  Compiler specific question. Not all compilers support this.
+  <br><br>
+  Otherwise, pascal enforces left to right processing of arguments. So even though, the argument processing order can be changed by the use of pascal, we can’t use Pascal language routines such as write inside C program.
+  
+ 
+</ion-card-content></ion-card>
+
+  
+</ion-content>

@@ -1,0 +1,265 @@
+<!--
+  Generated template for the HrPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+
+<ion-content class="pad" >
+   
+   <!-- <ion-list no-lines [virtualScroll]="yash" aproxItemHeight="40px">   
+   <ion-item *virtualItem="let item">
+     <div item-left style="width:60px;height:60px;border-radius: 50%" [style.background-color]="item.color">
+<h4 style="text-align: center">{{item.name}}</h4>
+</div>
+<button ion-item (click)="go()">{{item.heading}}</button>
+   </ion-item></ion-list>-->
+<ion-list> <ion-item (click)="h1p()">
+    <ion-icon name="arrow-dropright" item-end></ion-icon>
+    <div item-left style="width:27px;height:27px;border-radius: 50%;background-color: indigo" >
+    <h4 style="text-align: center;color: white;">1</h4>    </div>
+      <h3 class="h">  Hello, how are you today ?</h3>
+  </ion-item>
+  <ion-item (click)="h2p()">
+    <ion-icon name="arrow-dropright" item-end></ion-icon>
+    <div item-left style="width:27px;height:27px;border-radius: 50%;background-color: indigo" >
+        <h4 style="text-align: center;color: white">2</h4>    </div>
+   <h3 class="h"> Tell me about yourself</h3>
+  </ion-item>
+  <ion-item (click)="h3p()">
+    <ion-icon name="arrow-dropright" item-end></ion-icon>
+    <div item-left style="width:27px;height:27px;border-radius: 50%;background-color: indigo" >
+        <h4 style="text-align: center;color: white">3</h4>    </div>
+        <h3 class="h"> What are your key strengths ?</h3>
+    </ion-item>
+    <ion-item (click)="h4p()">
+      <ion-icon name="arrow-dropright" item-end></ion-icon>
+      <div item-left style="width:27px;height:27px;border-radius: 50%;background-color: indigo" >
+          <h4 style="text-align: center;color: white">4</h4>    </div>
+          <h3 class="h">What are your weaknesses ?</h3>
+      </ion-item>
+      <ion-item (click)="h5p()">
+        <ion-icon name="arrow-dropright" item-end></ion-icon>
+        <div item-left style="width:27px;height:27px;border-radius: 50%;background-color: indigo" >
+            <h4 style="text-align: center;color: white">5</h4>    </div>
+            <h3 class="h">Have you been in some challengi<br>-ng situation ? Explain how you<br> handled it ?</h3>
+        </ion-item>
+        <ion-item (click)="h6p()">
+          <ion-icon name="arrow-dropright" item-end></ion-icon>
+          <div item-left style="width:27px;height:27px;border-radius: 50%;background-color: indigo" >
+              <h4 style="text-align: center;color: white">6</h4>    </div>
+              <h3 class="h">      Why should we hire you ? </h3>
+          </ion-item>
+  <ion-item (click)="h7p()">
+   <ion-icon name="arrow-dropright" item-end></ion-icon>
+   <div item-left style="width:27px;height:27px;border-radius: 50%;background-color: indigo" >
+      <h4 style="text-align: center;color: white">7</h4>    </div>
+      <h3 class="h">What are your hobbies and <br>interests ? </h3>
+  </ion-item>
+  <ion-item (click)="h8p()">
+    <ion-icon name="arrow-dropright" item-end></ion-icon>
+    <div item-left style="width:27px;height:27px;border-radius: 50%;background-color: indigo" >
+        <h4 style="text-align: center;color: white">8</h4>    </div>
+        <h3 class="h"> Who is the most inspiring person <br>in your life ?</h3>
+   </ion-item>
+   <ion-item (click)="h9p()">
+    <ion-icon name="arrow-dropright" item-end></ion-icon>
+    <div item-left style="width:27px;height:27px;border-radius: 50%;background-color: indigo" >
+        <h4 style="text-align: center;color: white">9</h4>    </div>
+        <h3 class="h">Are you willing to change your<br> role and profile when required<br> for project?</h3> 
+   </ion-item>
+   <ion-item (click)="h10p()">
+    <ion-icon name="arrow-dropright" item-end></ion-icon>
+    <div item-left style="width:27px;height:27px;border-radius: 50%;background-color: indigo" >
+        <h4 style="text-align: center;color: white">10</h4>    </div>
+        <h3 class="h">Why do you want to work for us?</h3>
+   </ion-item>
+   <ion-item (click)="h11p()">
+    <ion-icon name="arrow-dropright" item-end></ion-icon>
+    <div item-left style="width:27px;height:27px;border-radius: 50%;background-color: indigo" >
+        <h4 style="text-align: center;color: white">11</h4>    </div>
+        <h3 class="h">What is one thing that you like <br>about our company?</h3>
+   </ion-item>
+   <ion-item (click)="h12p()">
+    <ion-icon name="arrow-dropright" item-end></ion-icon>
+    <div item-left style="width:27px;height:27px;border-radius: 50%;background-color: indigo" >
+        <h4 style="text-align: center;color: white">12</h4>    </div>
+        <h3 class="h"> What are your expectations from <br>your first job?</h3>
+   </ion-item>
+   <ion-item (click)="h13p()">
+    <ion-icon name="arrow-dropright" item-end></ion-icon>
+    <div item-left style="width:27px;height:27px;border-radius: 50%;background-color: indigo" >
+        <h4 style="text-align: center;color: white">13</h4>    </div>
+        <h3 class="h"> What are your long-term goals? <br>What are your short-term goals?</h3>
+   </ion-item>
+   <ion-item (click)="h14p()">
+    <ion-icon name="arrow-dropright" item-end></ion-icon>
+    <div item-left style="width:27px;height:27px;border-radius: 50%;background-color: indigo" >
+        <h4 style="text-align: center;color: white">14</h4>    </div>
+        <h3 class="h"> How well do you handle stress<br>/pressure?</h3>
+   </ion-item>
+   <ion-item (click)="h15p()">
+    <ion-icon name="arrow-dropright" item-end></ion-icon>
+    <div item-left style="width:27px;height:27px;border-radius: 50%;background-color: indigo" >
+        <h4 style="text-align: center;color: white">15</h4>    </div>
+        <h3 class="h"> Are you willing to relocate/travel <br>for work?</h3>
+       
+   </ion-item>
+   <ion-item (click)="h16p()">
+    <ion-icon name="arrow-dropright" item-end></ion-icon>
+    <div item-left style="width:27px;height:27px;border-radius: 50%;background-color: indigo" >
+        <h4 style="text-align: center;color: white">16</h4>    </div>
+        <h3 class="h"> Where do you see yourself in <br>5-10 years?</h3>
+   </ion-item>
+   <ion-item (click)="h17p()">
+    <ion-icon name="arrow-dropright" item-end></ion-icon>
+    <div item-left style="width:27px;height:27px;border-radius: 50%;background-color: indigo" >
+        <h4 style="text-align: center;color: white">17</h4>    </div>
+        <h3 class="h"> What’s your dream job?  </h3>
+   </ion-item>
+   <ion-item (click)="h18p()">
+    <ion-icon name="arrow-dropright" item-end></ion-icon>
+    <div item-left style="width:27px;height:27px;border-radius: 50%;background-color: indigo" >
+        <h4 style="text-align: center;color: white">18</h4>    </div>
+        <h3 class="h"> Are you comfortable with late<br> night and weekend shifts?</h3>
+   </ion-item>
+   <ion-item (click)="h19p()">
+    <ion-icon name="arrow-dropright" item-end></ion-icon>
+    <div item-left style="width:27px;height:27px;border-radius: 50%;background-color: indigo" >
+        <h4 style="text-align: center;color: white">19</h4>    </div>
+        <h3 class="h">What’s your biggest accompli-<br>shment?</h3>
+   </ion-item> 
+   <ion-item (click)="h20p()">
+    <ion-icon name="arrow-dropright" item-end></ion-icon>
+    <div item-left style="width:27px;height:27px;border-radius: 50%;background-color: indigo" >
+        <h4 style="text-align: center;color: white">20</h4>    </div>
+        <h3 class="h"> How much salary do you expect?</h3>
+   </ion-item> 
+   <ion-item (click)="h21p()">
+    <ion-icon name="arrow-dropright" item-end></ion-icon>
+    <div item-left style="width:27px;height:27px;border-radius: 50%;background-color: indigo" >
+        <h4 style="text-align: center;color: white">21</h4>    </div>
+        <h3 class="h">What do you know about this<br> company?</h3>
+
+   </ion-item> 
+   <ion-item (click)="h22p()">
+    <ion-icon name="arrow-dropright" item-end></ion-icon>
+    <div item-left style="width:27px;height:27px;border-radius: 50%;background-color: indigo" >
+        <h4 style="text-align: center;color: white">22</h4>    </div>
+        <h3 class="h">What are your thoughts about <br>working in a team?</h3>
+   </ion-item> 
+   
+   <ion-item (click)="h23p()">
+    <ion-icon name="arrow-dropright" item-end></ion-icon>
+    <div item-left style="width:27px;height:27px;border-radius: 50%;background-color: indigo" >
+        <h4 style="text-align: center;color: white">23</h4>    </div>
+        <h3 class="h">What software packages are you<br> familiar with?</h3>
+   </ion-item> 
+  
+   <ion-item (click)="h24p()">
+    <ion-icon name="arrow-dropright" item-end></ion-icon>
+    <div item-left style="width:27px;height:27px;border-radius: 50%;background-color: indigo" >
+        <h4 style="text-align: center;color: white">24</h4>    </div>
+        <h3 class="h">What makes you angry?</h3>
+   </ion-item> 
+   <ion-item (click)="h25p()">
+    <ion-icon name="arrow-dropright" item-end></ion-icon>
+    <div item-left style="width:27px;height:27px;border-radius: 50%;background-color: indigo" >
+        <h4 style="text-align: center;color: white">25</h4>    </div>
+        <h3 class="h"> Are you open to take risks? or Do<br> you like experimenting?</h3>
+   </ion-item> 
+   <ion-item (click)="h26p()">
+    <ion-icon name="arrow-dropright" item-end></ion-icon>
+    <div item-left style="width:27px;height:27px;border-radius: 50%;background-color: indigo" >
+        <h4 style="text-align: center;color: white">26</h4>    </div>
+        <h3 class="h">  What are the three things that are <br>most important for you in a job?</h3>
+   </ion-item> 
+   <ion-item (click)="h27p()">
+    <ion-icon name="arrow-dropright" item-end></ion-icon>
+    <div item-left style="width:27px;height:27px;border-radius: 50%;background-color: indigo" >
+        <h4 style="text-align: center;color: white">27</h4>    </div>
+        <h3 class="h"> Give me an example of your<br> creativity.</h3>
+   </ion-item> 
+   <ion-item (click)="h28p()">
+    <ion-icon name="arrow-dropright" item-end></ion-icon>
+     <div item-left style="width:27px;height:27px;border-radius: 50%;background-color: indigo" >
+        <h4 style="text-align: center;color: white">28</h4>    </div>
+        <h3 class="h"> How quickly do you adapt to new<br> technology?</h3>
+   </ion-item> 
+   <ion-item (click)="h29p()">
+    <ion-icon name="arrow-dropright" item-end></ion-icon>
+    <div item-left style="width:27px;height:27px;border-radius: 50%;background-color: indigo" >
+        <h4 style="text-align: center;color: white">29</h4>    </div>
+        <h3 class="h"> When can you start?</h3>
+   </ion-item>
+   <ion-item (click)="h30p()">
+    <ion-icon name="arrow-dropright" item-end></ion-icon>
+    <div item-left style="width:27px;height:27px;border-radius: 50%;background-color: indigo" >
+        <h4 style="text-align: center;color: white">30</h4>    </div>
+        <h3 class="h">  Create an imaginary difficult work<br> situation and tell us how you<br> will overcome it?</h3>
+   </ion-item>
+   <ion-item (click)="h31p()">
+    <ion-icon name="arrow-dropright" item-end></ion-icon>
+    <div item-left style="width:27px;height:27px;border-radius: 50%;background-color: indigo" >
+        <h4 style="text-align: center;color: white">31</h4>    </div>
+        <h3 class="h">   Who do you think are our main<br> competitors?</h3>
+   </ion-item>
+   <ion-item (click)="h32p()">
+    <ion-icon name="arrow-dropright" item-end></ion-icon>
+    <div item-left style="width:27px;height:27px;border-radius: 50%;background-color: indigo" >
+        <h4 style="text-align: center;color: white">32</h4>    </div>
+        <h3 class="h">  What kind of work environment<br> do you expect?</h3>
+   </ion-item>
+   <ion-item (click)="h33p()">
+    <ion-icon name="arrow-dropright" item-end></ion-icon>
+    <div item-left style="width:27px;height:27px;border-radius: 50%;background-color: indigo" >
+        <h4 style="text-align: center;color: white">33</h4>    </div>
+        <h3 class="h">    Do you lie?</h3>
+   </ion-item>
+   <ion-item (click)="h34p()">
+    <ion-icon name="arrow-dropright" item-end></ion-icon>
+    <div item-left style="width:27px;height:27px;border-radius: 50%;background-color: indigo" >
+        <h4 style="text-align: center;color: white">34</h4>    </div>
+        <h3 class="h">   How you feel about working late<br> or during the weekends?</h3>
+   </ion-item>
+   <ion-item (click)="h35p()">
+    <ion-icon name="arrow-dropright" item-end></ion-icon>
+    <div item-left style="width:27px;height:27px;border-radius: 50%;background-color: indigo" >
+        <h4 style="text-align: center;color: white">35</h4>    </div>
+        <h3 class="h"> How long do you think you will <br>work for us after we hire you?</h3>
+   </ion-item>
+   <ion-item (click)="h36p()">
+    <ion-icon name="arrow-dropright" item-end></ion-icon>
+    <div item-left style="width:27px;height:27px;border-radius: 50%;background-color: indigo" >
+        <h4 style="text-align: center;color: white">36</h4>    </div>
+        <h3 class="h"> What makes you happy?</h3>
+   </ion-item>
+   <ion-item (click)="h37p()">
+    <ion-icon name="arrow-dropright" item-end></ion-icon>
+    <div item-left style="width:27px;height:27px;border-radius: 50%;background-color: indigo" >
+        <h4 style="text-align: center;color: white">37</h4>    </div>
+        <h3 class="h">If you won a Rs.10-crore lottery,<br> would you still work?</h3>
+   </ion-item>
+   <ion-item (click)="h38p()">
+    <ion-icon name="arrow-dropright" item-end></ion-icon>
+    <div item-left style="width:27px;height:27px;border-radius: 50%;background-color: indigo" >
+        <h4 style="text-align: center;color: white">38</h4>    </div>
+        <h3 class="h">How do you respond to change?</h3>
+   </ion-item>
+   <ion-item (click)="h39p()">
+    <ion-icon name="arrow-dropright" item-end></ion-icon>
+    <div item-left style="width:27px;height:27px;border-radius: 50%;background-color: indigo" >
+        <h4 style="text-align: center;color: white">39</h4>    </div>
+        <h3 class="h">  What is the difference between<br> hard work and smart work?</h3>
+   </ion-item>
+   <ion-item (click)="h40p()">
+    <ion-icon name="arrow-dropright" item-end></ion-icon>
+    <div item-left style="width:27px;height:27px;border-radius: 50%;background-color: indigo" >
+        <h4 style="text-align: center;color: white">40</h4>    </div>
+        <h3 class="h"> Do you have any questions for<br> me/us?</h3>
+   </ion-item>
+
+</ion-list>
+
+</ion-content>

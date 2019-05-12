@@ -1,0 +1,885 @@
+<!--
+  Generated template for the CsstheoryPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="ownclr">
+    <button ion-button menuToggle  icon-only end side="right">
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    <ion-title>Css Interview Questions</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content style="background-color: rgb(233, 233, 240)">
+  
+
+      <ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+        <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+      What is CSS?
+    </ion-card-header>
+    <ion-card-content style="font-size: 14px">
+Cascading Style Sheets, fondly referred to as CSS, is a simple design language intended to simplify the process of making web pages presentable.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What are advantages of using CSS?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+Following are the advantages of using CSS −
+<br> <br>
+CSS saves time − You can write CSS once and then reuse same sheet in multiple HTML pages. You can define a style for each HTML element and apply it to as many Web pages as you want.
+<br> <br>
+Pages load faster − If you are using CSS, you do not need to write HTML tag attributes every time. Just write one CSS rule of a tag and apply it to all the occurrences of that tag. So less code means faster download times.
+<br> <br>
+Easy maintenance − To make a global change, simply change the style, and all elements in all the web pages will be updated automatically.
+<br> <br>
+Superior styles to HTML − CSS has a much wider array of attributes than HTML, so you can give a far better look to your HTML page in comparison to HTML attributes.
+<br> <br>
+Multiple Device Compatibility − Style sheets allow content to be optimized for more than one type of device. By using the same HTML document, different versions of a website can be presented for handheld devices such as PDAs and cell phones or for printing.
+<br> <br>
+Global web standards − Now HTML attributes are being deprecated and it is being recommended to use CSS. So its a good idea to start using CSS in all the HTML pages to make them compatible to future browsers.
+<br> <br>
+Offline Browsing − CSS can store web applications locally with the help of an offline catche.Using of this, we can view offline websites.The cache also ensures faster loading and better overall performance of the website.
+<br> <br>
+Platform Independence − The Script offer consistent platform independence and can support latest browsers as well.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What are the components of a CSS Style?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+A style rule is made of three parts −
+<br> <br>
+Selector − A selector is an HTML tag at which a style will be applied. This could be any tag like "h1" or "table" etc.
+<br> <br>
+Property − A property is a type of attribute of HTML tag. Put simply, all the HTML attributes are converted into CSS properties. They could be color, border etc.
+<br> <br>
+Value − Values are assigned to properties. For example, color property can have value either red or #F1F1F1 etc.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What is type selector?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+Type selector quite simply matches the name of an element type. To give a color to all level 1 headings −
+<br> <br>
+h1 {{'{'}} <br>
+color: #36CFFF;  <br>
+{{'}'}}
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What is universal selector?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+Rather than selecting elements of a specific type, the universal selector quite simply matches the name of any element type −
+<br> <br>
+* {{'{'}} <br>
+color: #000000;  <br>
+{{'}'}} <br> <br>
+
+This rule renders the content of every element in our document in black.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What is Descendant Selector?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+Suppose you want to apply a style rule to a particular element only when it lies inside a particular element. As given in the following example, style rule will apply to "em" element only when it lies inside "ul" tag.
+<br> <br>
+ul em {{'{'}} <br>
+color: #000000;  <br>
+{{'}'}}
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What is class selector?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+You can define style rules based on the class attribute of the elements. All the elements having that class will be formatted according to the defined rule.
+<br> <br>
+.black {{'{'}} <br>
+color: #000000;  <br>
+{{'}'}}
+<br> <br>
+This rule renders the content in black for every element with class attribute set to black in our document.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Can you make a class selector particular<br> to an element type?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+You can make it a bit more particular. For example −
+<br> <br>
+h1.black {{'{'}} <br>
+color: #000000;  <br>
+{{'}'}} <br> <br>
+
+This rule renders the content in black for only "h1" elements with class attribute set to black.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What is id selector?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+You can define style rules based on the id attribute of the elements. All the elements having that id will be formatted according to the defined rule.
+<br> <br>
+#black {{'{'}} <br>
+color: #000000;  <br>
+{{'}'}} <br> <br>
+
+This rule renders the content in black for every element with id attribute set to black in our document.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Can you make a id selector particular<br> to an element type?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+you can make it a bit more particular. For example −
+<br> <br>
+h1#black {{'{'}} <br>
+color: #000000;  <br>
+{{'}'}} <br> <br>
+
+This rule renders the content in black for only "h1" elements with id attribute set to black.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What is a child selector?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+Consider the following example −
+<br> <br>
+body > p {{'{'}} <br>
+color: #000000;  <br>
+{{'}'}} <br> <br>
+
+This rule will render all the paragraphs in black if they are direct child of "body" element. Other paragraphs put inside other elements like "div" or "td" would not have any effect of this rule.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What is an attribute selector?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+You can also apply styles to HTML elements with particular attributes. The style rule below will match all the input elements having a type attribute with a value of text −
+<br> <br>
+input[type = "text"]{{'{'}} <br>
+color: #000000;  <br>
+{{'}'}} 
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+How to select all paragraph elements<br> with a lang attribute?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+p[lang] : Selects all paragraph elements with a lang attribute.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+How to select all paragraph elements<br> whose lang attribute has a value of<br> exactly "fr"?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+p[lang="fr"] - Selects all paragraph elements whose lang attribute has a value of exactly "fr".
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+How to select all paragraph elements<br> whose lang attribute contains the<br> word "fr"?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+p[lang~="fr"] - Selects all paragraph elements whose lang attribute contains the word "fr".
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+How to select all paragraph elements<br> whose lang attribute contains values that<br> are exactly "en", or begin with "en-"?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+p[lang|="en"] - Selects all paragraph elements whose lang attribute contains values that are exactly "en", or begin with "en-".
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What are the various ways of using CSS<br> in an HTML page?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+There are four ways to associate styles with your HTML document. Most commonly used methods are inline CSS and External CSS.
+<br> <br>
+Embedded CSS − The "style" Element:You can put your CSS rules into an HTML document using the "style" element.
+<br> <br>
+Inline CSS − The style Attribute You can use style attribute of any HTML element to define style rules.
+<br> <br>
+External CSS − The "link" Element The "link" element can be used to include an external stylesheet file in your HTML document.
+<br> <br>
+Imported CSS − @import Rule: @import is used to import an external stylesheet in a manner similar to the "link" element.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+How CSS style overriding works?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+Following is the rule to override any Style Sheet Rule −
+<br> <br>
+Any inline style sheet takes highest priority. So, it will override any rule defined in "style" tags or rules defined in any external style sheet file.
+<br> <br>
+Any rule defined in "style" tags will override rules defined in any external style sheet file.
+<br> <br>
+Any rule defined in external style sheet file takes lowest priority, and rules defined in this file will be applied only when above two rules are not applicable.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What is the purpose of % measurement<br> unit?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+% − Defines a measurement as a percentage relative to another value, typically an enclosing element.
+<br> <br>
+p {{'{'}}font-size: 16pt; line-height: 125%;{{'}'}}
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What is the purpose of cm measurement<br> unit?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+cm − Defines a measurement in centimeters.
+<br> <br>
+div {{'{'}}margin-bottom: 2cm;{{'}'}}
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What is the purpose of em measurement<br> unit?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+em − A relative measurement for the height of a font in em spaces. Because an em unit is equivalent to the size of a given font, if you assign a font to 12pt, each "em" unit would be 12pt; thus, 2em would be 24pt.
+<br> <br>
+p {{'{'}}letter-spacing: 7em;{{'}'}}
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What is the purpose of ex measurement<br> unit?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+ex − This value defines a measurement relative to a font's x-height. The x-height is determined by the height of the font's lowercase letter.
+<br> <br>
+p {{'{'}}font-size: 24pt; line-height: 3ex;{{'}'}}
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What is the purpose of in measurement<br> unit?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+in − Defines a measurement in inches.
+<br> <br>
+p {{'{'}}word-spacing: .15in;{{'}'}}
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What is the purpose of mm measurement<br> unit?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+mm − Defines a measurement in millimeters.
+<br> <br>
+p {{'{'}}word-spacing: 15mm;{{'}'}}
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What is the purpose of pc measurement<br> unit?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+pc − Defines a measurement in picas. A pica is equivalent to 12 points; thus, there are 6 picas per inch.
+<br> <br>
+p {{'{'}}font-size: 20pc;{{'}'}}
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What is the purpose of pt measurement<br> unit?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+pt − Defines a measurement in points. A point is defined as 1/72nd of an inch. 
+<br> <br>
+body {{'{'}}font-size: 18pt;{{'}'}}
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What is the purpose of px measurement<br> unit?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+px − Defines a measurement in screen pixels.
+<br> <br>
+p {{'{'}}padding: 25px;{{'}'}}
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What is the purpose of vh measurement<br> unit?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+vh − 1% of viewport height.
+<br> <br>
+h2 {{'{'}} font-size: 3.0vh; {{'}'}}
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What is the purpose of vw measurement<br> unit?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+vw − 1% of viewport width.
+<br> <br>
+h1 {{'{'}} font-size: 5.9vw; {{'}'}}
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What is the purpose of vmin measurement<br> unit?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+vmin 1vw or 1vh, whichever is smaller.
+<br> <br>
+p {{'{'}} font-size: 2vmin;{{'}'}}
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+In how many formats can you specify<br> a CSS color?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+You can specify your color values in various formats. <br> Following table lists all the possible formats −
+<br> <br>
+Format & Syntax	Example <br> <br>
+Hex Code & #RRGGBB	p {{'{'}} color:#FF0000;{{'}'}} <br> <br>
+Short Hex Code & #RGB	p {{'{'}} color:#6A7;{{'}'}} <br> <br>
+RGB % & rgb ( rrr%, ggg%, bbb%)	p {{'{'}} color:rgb (50%, 50%, 50%); {{'}'}} <br> <br>
+RGB Absolute & rgb ( rrr, ggg, bbb)	p {{'{'}} color:rgb (0, 0, 255);{{'}'}} <br> <br>
+keyword & aqua, black, etc.	p {{'{'}} color:teal;{{'}'}}
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What are browser safe colors?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+There is the list of 216 colors which are supposed to be most safe and computer independent colors. These colors vary from hexa code 000000 to FFFFFF. <br> <br>
+ These colors are safe to use because they ensure that all computers would display the colors correctly when running a 256 color palette.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which property is used to set the <br>background color of an element?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The background-color property is used to set the background color of an element.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which property is used to set the<br> background image of an element?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The background-image property is used to set the background image of an element.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which property is used to control the<br> repetition of an image in the background?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The background-repeat property is used to control the repetition of an image in the background.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which property is used to control the<br> position of an image in the background?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The background-position property is used to control the position of an image in the background.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which property is used to control the<br> scrolling of an image in the background?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The background-attachment property is used to control the scrolling of an image in the background.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which property is used as a shorthand to<br> specify a number of other background<br> properties?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The background property is used as a shorthand to specify a number of other background properties.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which property is used to change the face<br> of a font?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The font-family property is used to change the face of a font.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which property is used to make a font<br> italic or oblique?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The font-style property is used to make a font italic or oblique.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which property is used to create a<br> small-caps effect?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The font-variant property is used to create a small-caps effect.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which property is used to increase or<br> decrease how bold or light a font appears?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The font-weight property is used to increase or decrease how bold or light a font appears.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which property is used to increase or<br> decrease the size of a font?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The font-size property is used to increase or decrease the size of a font.
+</ion-card-content></ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which property is used as shorthand to<br> specify a number of other font properties?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The font property is used as shorthand to specify a number of other font properties.
+</ion-card-content></ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which property is used to set the<br> color of a text?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The color property is used to set the color of a text.
+</ion-card-content></ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which property is used to set the<br> text direction?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The direction property is used to set the text direction.
+</ion-card-content></ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which property is used to add or subtract<br> space between the letters that make <br>up a word?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The letter-spacing property is used to add or subtract space between the letters that make up a word.
+</ion-card-content></ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which property is used to add or subtract<br> space between the words of a sentence?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The word-spacing property is used to add or subtract space between the words of a sentence.
+</ion-card-content></ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which property is used to indent the text<br> of a paragraph?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The text-indent property is used to indent the text of a paragraph.
+</ion-card-content></ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which property is used to align the text<br> of a document?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The text-align property is used to align the text of a document.
+</ion-card-content></ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which property is used to underline,<br> overline, and strikethrough text?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The text-decoration property is used to underline, overline, and strikethrough text.
+</ion-card-content></ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which property is used to capitalize text<br> or convert text to uppercase or lowercase letters?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The text-transform property is used to capitalize text or convert text to uppercase or lowercase letters.
+</ion-card-content></ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which property is used to control the<br> flow and formatting of text?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The white-space property is used to control the flow and formatting of text.
+</ion-card-content></ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which property is used to set the<br> text shadow around a text?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The text-shadow property is used to set the text shadow around a text.
+</ion-card-content></ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which property is used to set the<br> width of an image border?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The border property is used to set the width of an image border.
+</ion-card-content></ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which property is used to set the<br> height of an image?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The height property is used to set the height of an image.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which property is used to set the<br> width of an image?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The width property is used to set the width of an image.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which property is used to set the<br> opacity of an image?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The -moz-opacity property is used to set the opacity of an image.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+
+Which property of a hyperlink<br> signifies unvisited hyperlinks?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The :link signifies unvisited hyperlinks.
+</ion-card-content></ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which property of a hyperlink<br> signifies visited hyperlinks?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The :visited signifies visited hyperlinks.
+</ion-card-content></ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which property of a hyperlink signifies<br> an element that currently has the user's <br>mouse pointer hovering over it?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The :hover signifies an element that currently has the user's mouse pointer hovering over it.
+</ion-card-content></ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which property of a hyperlink signifies<br> an element on which the user is<br> currently clicking?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The :active signifies an element on which the user is currently clicking.
+</ion-card-content></ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which property of a table specifies whether<br> the browser should control the appearance<br> of the adjacent borders?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The border-collapse specifies whether the browser should control the appearance of the adjacent borders that touch each other or whether each cell should maintain its style.
+</ion-card-content></ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which property of a table specifies<br> the width that should appear <br>between table cells?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The border-spacing specifies the width that should appear between table cells.
+</ion-card-content></ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which property of a table controls the<br> placement of the table caption?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The caption-side captions are presented in the "caption" element. By default, these are rendered above the table in the document. You use the caption-side property to control the placement of the table caption.
+</ion-card-content></ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which property of a table specifies<br> whether the border should be shown<br> if a cell is empty?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The empty-cells specifies whether the border should be shown if a cell is empty.
+</ion-card-content></ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which property of a table allows browsers<br> to speed up layout of a table by using<br> the first width properties?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The table-layout allows browsers to speed up layout of a table by using the first width properties it comes across for the rest of a column rather than having to load the whole table before rendering it.
+</ion-card-content></ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which property specifies the color of a<br> border?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The border-color specifies the color of a border.
+</ion-card-content></ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which property specifies whether a border<br> should be solid, dashed line, double line, or<br> one of the other possible values?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The border-style specifies whether a border should be solid, dashed line, double line, or one of the other possible values.
+</ion-card-content></ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which property specifies the width<br> of a border?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The border-width specifies the width of a border.
+</ion-card-content></ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which property specifies a shorthand<br> property for setting the margin<br> properties in one declaration?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The margin specifies a shorthand property for setting the margin properties in one declaration.
+</ion-card-content></ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which property specifies the bottom<br> margin of an element?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The margin-bottom specifies the bottom margin of an element.
+</ion-card-content></ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which property specifies the top<br> margin of an element?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The margin-top specifies the top margin of an element.
+</ion-card-content></ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which property specifies the left<br> margin of an element?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The margin-left specifies the left margin of an element.
+</ion-card-content></ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which property specifies the right<br> margin of an element?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The margin-right specifies the right margin of an element.
+</ion-card-content></ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which property allows you to control the<br> shape or appearance of the marker<br> of a list?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The list-style-type allows you to control the shape or appearance of the marker.
+</ion-card-content></ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which property specifies whether a long<br> point that wraps to a second line should<br> align with the first line or start <br>underneath the start of the marker of <br>a list?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The list-style-position specifies whether a long point that wraps to a second line should align with the first line or start underneath the start of the marker.
+</ion-card-content></ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which property specifies an image<br> rather than a bullet point or number<br> for the marker of a list?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The list-style-image specifies an image for the marker rather than a bullet point or number.
+</ion-card-content></ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which property serves as shorthand <br>for the styling properties of a list?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The list-style serves as shorthand for the styling properties.
+</ion-card-content></ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which property specifies the distance<br> between a marker and the text in the list?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The marker-offset specifies the distance between a marker and the text in the list.
+</ion-card-content></ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which property specifies the bottom<br> padding of an element?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The padding-bottom specifies the bottom padding of an element.
+</ion-card-content></ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which property specifies the top<br> padding of an element?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The padding-top specifies the top padding of an element.
+</ion-card-content></ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which property specifies the left<br> padding of an element?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The padding-left specifies the left padding of an element.
+</ion-card-content></ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which property specifies the right<br> padding of an element?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The padding-right specifies the right padding of an element.
+</ion-card-content></ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which property serves as shorthand for<br> the all the padding properties<br> of an element?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The padding serves as shorthand for the all the padding properties.
+</ion-card-content></ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which property allows you to specify the<br> type of cursor that should be<br> displayed to the user?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The cursor property of CSS allows you to specify the type of cursor that should be displayed to the user.
+</ion-card-content></ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which value of cursor property changes<br> the cursor based on context area it is over?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+auto − Shape of the cursor depends on the context area it is over. For example, an 'I' over text, a 'hand' over a link, and so on.
+</ion-card-content></ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which value of cursor property changes<br> the cursor to a crosshair or plus sign?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+crosshair − A crosshair or plus sign.
+</ion-card-content></ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which value of cursor property changes<br> the cursor to an arrow?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+default − An arrow.
+</ion-card-content></ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which value of cursor property changes<br> the cursor to a pointer?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+pointer − A pointing hand (in IE 4 this value is hand).
+</ion-card-content></ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which value of cursor property changes<br> the cursor to the 'I' bar?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+move or text − The 'I' bar.
+</ion-card-content></ion-card>
+
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which value of cursor property changes<br> the cursor to the an hour glass?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+wait − An hour glass.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which value of cursor property changes<br> the cursor to a question mark?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+help − A question mark or balloon, ideal for use over help buttons.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Can you set an image to be shown<br> as cursor?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+Yes! set the url as the source of a cursor image file.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which property is used to set the<br> width of the outline?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The outline-width property is used to set the width of the outline.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which property is used to set the <br>line style for the outline?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The outline-style property is used to set the line style for the outline.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which property is used to set the<br> color of the outline?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The outline-color property is used to set the color of the outline.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which property is used to set all<br> the outlining properties in a single <br>statement?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The outline property is used to set all the outlining properties in a single statement.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which property is used to set the<br> height of a box?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The height property is used to set the height of a box.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which property is used to set the <br>width of a box?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The width property is used to set the width of a box.
+</ion-card-content></ion-card>
+
+</ion-content>

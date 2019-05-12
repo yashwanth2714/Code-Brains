@@ -1,0 +1,482 @@
+<!--
+  Generated template for the JstheoryPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-navbar color="ownclr">
+      <button ion-button menuToggle  icon-only end side="right">
+          <ion-icon name="menu"></ion-icon>
+        </button>
+      <ion-title>JavaScript Interview Questions</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+  
+  
+  <ion-content style="background-color: rgb(233, 233, 240)">
+    
+            <ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+              <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+            What is JavaScript?
+          </ion-card-header>
+          <ion-card-content style="font-size: 14px">
+JavaScript is a lightweight, interpreted programming language with object-oriented capabilities that allows you to build interactivity into otherwise static HTML pages.
+<br><br>
+The general-purpose core of the language has been embedded in Netscape, Internet Explorer, and other web browsers.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Name some of the JavaScript features.
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+JavaScript is a lightweight, interpreted programming language.
+<br><br>
+JavaScript is designed for creating network-centric applications.
+<br><br>
+JavaScript is complementary to and integrated with Java.
+<br><br>
+JavaScript is is complementary to and integrated with HTML.
+<br><br>
+JavaScript is open and cross-platform.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What are the advantages of using<br> JavaScript?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+Less server interaction − You can validate user input before sending the page off to the server. This saves server traffic, which means less load on your server.
+<br><br>
+Immediate feedback to the visitors − They don't have to wait for a page reload to see if they have forgotten to enter something.
+<br><br>
+Increased interactivity − You can create interfaces that react when the user hovers over them with a mouse or activates them via the keyboard.
+<br><br>
+Richer interfaces − You can use JavaScript to include such items as drag-and-drop components and sliders to give a Rich Interface to your site visitors.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What are disadvantages of using<br> JavaScript?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+Client-side JavaScript does not allow the reading or writing of files. This has been kept for security reason.
+<br><br>
+JavaScript can not be used for Networking applications because there is no such support available.
+<br><br>
+JavaScript doesn't have any multi-threading or multiprocess capabilities.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Is JavaScript a case-sensitive language?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+Yes! JavaScript is a case-sensitive language. This means that language keywords, variables, function names, and any other identifiers must always be typed with a consistent capitalization of letters.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+How can you create an Object in<br> JavaScript?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+JavaScript supports Object concept very well. You can create an object using the object literal as follows −
+<br><br>
+var emp = {{'{'}}<br>
+name: "Zara",<br>
+age: 10<br>
+{{'}'}};
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+How can you read properties of<br> an Object in JavaScript?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+You can write and read properties of an object using the dot notation as follows −
+<br><br>
+// Getting object properties<br>
+emp.name // ==> Zara<br>
+emp.age // ==> 10<br><br>
+
+// Setting object properties<br>
+emp.name = "Daisy" // <br>
+emp.age = 20 // 
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+How can you create an Array in<br> JavaScript?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+You can define arrays using the array literal as follows −
+<br><br>
+var x = [];<br>
+var y = [1, 2, 3, 4, 5];
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+How to read elements of an array<br> in JavaScript?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+An array has a length property that is useful for iteration. We can read elements of an array as follows −
+<br><br>
+var x = [1, 2, 3, 4, 5];<br>
+for (var i = 0; i < x.length; i++) {{'{'}}<br>
+// Do something with x[i]<br>
+{{'}'}}
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What is a named function in JavaScript?<br> How to define a named function?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+A named function has a name when it is defined. A named function can be defined using function keyword as follows −
+<br><br>
+function named(){{'{'}}<br>
+// do some stuff here<br>
+{{'}'}}
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+How many types of functions JavaScript<br> supports?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+A function in JavaScript can be either named or anonymous.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+How to define a anonymous function?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+An anonymous function can be defined in similar way as a normal function but it would not have any name.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Can you assign a anonymous <br>function to a variable?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+Yes! An anonymous function can be assigned to a variable.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Can you pass a anonymous function<br> as an argument to another function?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+Yes! An anonymous function can be passed as an argument to another function.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What is arguments object in JavaScript?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+JavaScript variable arguments represents the arguments passed to a function.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+How can you get the type of arguments<br> passed to a function?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+Using typeof operator, we can get the type of arguments passed to a function. For example −
+<br><br>
+function func(x){{'{'}}<br>
+console.log(typeof x, arguments.length);<br>
+{{'}'}}<br>
+func(); //==> "undefined", 0<br>
+func(1); //==> "number", 1<br>
+func("1", "2", "3"); //==> "string", 3
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+How can you get the total number of<br> arguments passed to a function?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+Using arguments.length property, we can get the total number of arguments passed to a function. For example −
+<br><br>
+function func(x){{'{'}}<br>
+console.log(typeof x, arguments.length);<br>
+{{'}'}}<br>
+func(); //==> "undefined", 0<br>
+func(1); //==> "number", 1<br>
+func("1", "2", "3"); //==> "string", 3
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+How can you get the reference of a<br> caller function inside a function?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The arguments object has a callee property, which refers to the function you're inside of. For example −
+<br><br>
+function func() {{'{'}}<br>
+return arguments.callee; <br>
+{{'}'}}<br>
+func(); // ==> func
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What is the purpose of 'this' operator<br> in JavaScript?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+JavaScript famous keyword this always refers to the current context.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What are the valid scopes of a<br> variable in JavaScript?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+Global Variables − A global variable has global scope which means it is visible everywhere in your JavaScript code.
+<br><br>
+Local Variables − A local variable will be visible only within a function where it is defined. Function parameters are always local to that function.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which type of variable among global<br> and local, takes precedence over other<br> if names are same?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+A local variable takes precedence over a global variable with the same name.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What is callback?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+A callback is a plain JavaScript function passed to some method as an argument or option. Some callbacks are just events, called to give the user a chance to react when a certain state is triggered.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What is closure?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+Closures are created whenever a variable that is defined outside the current scope is accessed from within some inner scope.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Give an example of closure?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+Following example shows how the variable counter is visible within the create, increment, and print functions, but not outside of them −
+<br><br>
+function create() {{'{'}}<br>
+var counter = 0;<br>
+return {{'{'}}<br>
+increment: function() {{'{'}}<br>
+counter++;<br>
+{{'}'}},<br><br>
+
+print: function() {{'{'}}<br>
+console.log(counter);<br>
+{{'}'}}<br>
+{{'}'}}<br>
+{{'}'}}<br>
+var c = create();<br>
+c.increment();<br>
+c.print(); // ==> 1
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which built-in method returns the<br> character at the specified index?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+charAt() method returns the character at the specified index.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which built-in method combines the text<br> of two strings and returns a new string?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+concat() method returns the character at the specified index.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which built-in method calls a function<br> for each element in the array?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+forEach() method calls a function for each element in the array.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which built-in method returns the index<br> within the calling String object of the first<br> occurrence of the specified value?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+indexOf() method returns the index within the calling String object of the first occurrence of the specified value, or −1 if not found.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which built-in method returns the<br> length of the string?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+length() method returns the length of the string.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which built-in method removes the<br> last element from an array and<br> returns that element?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+pop() method removes the last element from an array and returns that element.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which built-in method adds one or<br> more elements to the end of an array and<br> returns the new length of the array?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+push() method adds one or more elements to the end of an array and returns the new length of the array.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which built-in method reverses the<br> order of the elements of an array?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+reverse() method reverses the order of the elements of an array −− the first becomes the last, and the last becomes the first.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which built-in method sorts the<br> elements of an array?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+sort() method sorts the elements of an array.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which built-in method returns the<br> characters in a string beginning<br> at the specified location?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+substr() method returns the characters in a string beginning at the specified location through the specified number of characters.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which built-in method returns the<br> calling string value converted to<br> lower case?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+toLowerCase() method returns the calling string value converted to lower case.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which built-in method returns the<br> calling string value converted to<br> upper case?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+toUpperCase() method returns the calling string value converted to upper case.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Which built-in method returns the<br> string representation of the number's value?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+toString() method returns the string representation of the number's value.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What are the variable naming<br> conventions in JavaScript?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+While naming your variables in JavaScript keep following rules in mind.
+<br><br>
+You should not use any of the JavaScript reserved keyword as variable name. These keywords are mentioned in the next section. For example, break or boolean variable names are not valid.
+<br><br>
+JavaScript variable names should not start with a numeral (0-9). They must begin with a letter or the underscore character. For example, 123test is an invalid variable name but _123test is a valid one.
+<br><br>
+JavaScript variable names are case sensitive. For example, Name and name are two different variables.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+How typeof operator works?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The typeof is a unary operator that is placed before its single operand, which can be of any type. Its value is a string indicating the data type of the operand.
+<br><br>
+The typeof operator evaluates to "number", "string", or "boolean" if its operand is a number, string, or boolean value and returns true or false based on the evaluation.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What typeof returns for a null value?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+It returns "object".
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+Can you access Cookie using javascript?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+JavaScript can also manipulate cookies using the cookie property of the Document object. JavaScript can read, create, modify, and delete the cookie or cookies that apply to the current web page.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+How to create a Cookie using JavaScript?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The simplest way to create a cookie is to assign a string value to the document.cookie object, which looks like this −
+<br><br>
+Syntax −
+<br><br>
+document.cookie = "key1 = value1; key2 = value2; expires = date";
+<br><br>
+Here expires attribute is option. If you provide this attribute with a valid date or time then cookie will expire at the given date or time and after that cookies' value will not be accessible.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+How to read a Cookie using JavaScript?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+Reading a cookie is just as simple as writing one, because the value of the document.cookie object is the cookie. So you can use this string whenever you want to access the cookie.
+<br><br>
+The document.cookie string will keep a list of name = value pairs separated by semicolons, where name is the name of a cookie and value is its string value.
+<br><br>
+You can use strings' split() function to break the string into key and values.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+How to delete a Cookie using JavaScript?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+Sometimes you will want to delete a cookie so that subsequent attempts to read the cookie return nothing. To do this, you just need to set the expiration date to a time in the past.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+How to print a web page using javascript?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+JavaScript helps you to implement this functionality using print function of window object. The JavaScript print function window.print() will print the current web page when executed.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What is Date object in JavaScript?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The Date object is a datatype built into the JavaScript language. Date objects are created with the new Date( ).
+<br><br>
+Once a Date object is created, a number of methods allow you to operate on it. Most methods simply allow you to get and set the year, month, day, hour, minute, second, and millisecond fields of the object, using either local time or UTC (universal, or GMT) time.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What is Number object in JavaScript?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The Number object represents numerical date, either integers or floating-point numbers. In general, you do not need to worry about Number objects because the browser automatically converts number literals to instances of the number class.
+<br><br>
+Syntax −
+<br><br>
+Creating a number object −<br>
+var val = new Number(number);<br><br>
+
+If the argument cannot be converted into a number, it returns NaN (Not-a-Number).
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+How to handle exceptions in JavaScript?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The latest versions of JavaScript added exception handling capabilities. JavaScript implements the try...catch...finally construct as well as the throw operator to handle exceptions.
+<br><br>
+You can catch programmer-generated and runtime exceptions, but you cannot catch JavaScript syntax errors.
+</ion-card-content></ion-card>
+<ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+  <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+What is purpose of onError event handler<br> in JavaScript?
+</ion-card-header>
+<ion-card-content style="font-size: 14px">
+The onerror event handler was the first feature to facilitate error handling for JavaScript. The error event is fired on the window object whenever an exception occurs on the page.
+<br><br>
+The onerror event handler provides three pieces of information to identify the exact nature of the error −
+<br><br>
+Error message − The same message that the browser would display for the given error.
+<br><br>
+URL − The file in which the error occurred.
+<br><br>
+Line number − The line number in the given URL that caused the error.
+</ion-card-content></ion-card>
+</ion-content>

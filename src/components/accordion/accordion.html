@@ -1,0 +1,17 @@
+<!-- Generated template for the AccordionComponent component -->
+<ion-card no-padding class="pad1">
+  <ion-card-header (click)="toggleAccordion()" no-padding>
+    <ion-list style="width: 100%" no-padding no-lines>
+      <ion-item color="acc">
+        <button ion-button clear small icon-only item-right >
+          <ion-icon color="light" [name]="icon"></ion-icon>
+        </button>
+        {{ title }}
+      </ion-item>
+    </ion-list>
+  </ion-card-header>
+  <ion-card-content #cc no-padding>
+    <button ion-button clear  (click)="topicWise()" style="color:  rgba(68, 216, 216, 0.925)">Interview</button>
+    <button ion-button clear (click)="coding()" item-right style="color: rgba(68, 216, 216, 0.925)">Output/MCQ</button>
+  </ion-card-content>
+</ion-card>

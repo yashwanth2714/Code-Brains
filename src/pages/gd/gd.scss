@@ -1,0 +1,28 @@
+page-gd {
+    .bg {
+        background-color: rgb(44, 40, 40);
+    }
+    .p {
+        font-size: 14px;
+        color: white;  
+        line-height: 1.3em;
+        
+        word-spacing:1.2px;
+        letter-spacing:0.4px;
+            }
+            .h {
+                font-size: 20px;
+                color: rgb(62, 184, 58);
+               
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+            ion-card  {
+                box-shadow: 0px;
+                display: flex;
+                flex-direction: column;
+                width: 100% !important;
+                padding: 0;
+                max-width: 1200px;
+                margin: 0 !important;
+            }
+        }

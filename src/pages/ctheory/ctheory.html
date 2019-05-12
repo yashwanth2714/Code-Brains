@@ -1,0 +1,354 @@
+<!--
+  Generated template for the CtheoryPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="ownclr">
+    <button ion-button menuToggle  icon-only end side="right">
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    <ion-title>C Interview Questions</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content   style="background-color: rgb(233, 233, 240)">
+  
+  <ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+    <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+  What is a pointer on pointer?
+ </ion-card-header>
+ <ion-card-content style="font-size: 14px">
+     It’s a pointer variable which can hold the address of another pointer variable.It de-refers twice to point to the data held by the designated pointer variable. 
+     <br><br>Eg:<br> int x = 5,<br> *p = &x,<br> **q = &p.<br><br>  Therefore ‘x’ can be accessed by **q. 
+       </ion-card-content>
+  </ion-card>
+  <ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+      <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+      Distinguish between malloc() & <br>
+      calloc() memory allocation.
+    </ion-card-header>
+    <ion-card-content style="font-size: 14px">
+      Both allocates memory from heap area/dynamic memory. By default calloc fills the allocated memory with 0’s. 
+    </ion-card-content>
+  </ion-card >
+  <ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+      <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+        What is keyword auto for?
+    </ion-card-header>
+    <ion-card-content style="font-size: 14px">
+      By default every local variable of the function is automatic (auto). In the below function both the variables ‘i’ and ‘j’ are automatic variables. 
+      <br> void f() {{'{'}}<br> int i;<br> auto int j;<br> {{'}'}} <br>NOTE − A global variable can’t be an automatic  variable.
+    </ion-card-content>
+  </ion-card>
+  <ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+      <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+        What are the valid places for the<br> keyword break to appear?
+    </ion-card-header>
+    <ion-card-content style="font-size: 14px">
+        Break can appear only with in the looping control and switch statement. The purpose of the break is to bring the control out from the said blocks. 
+    </ion-card-content>
+  </ion-card>
+  <ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+      <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+        What is difference between including <br>the header file with-in angular braces<br> < > and double quotes “ “?
+      </ion-card-header>
+      <ion-card-content style="font-size: 14px"> 
+        If a header file is included with in < > then the compiler searches for the particular header file only with in the built in include path. 
+        <br><br> If a header file is included with in “ “, then the compiler searches for the particular header file first in the current working directory, if not found then in the built in include path. 
+      </ion-card-content>
+    </ion-card>
+    <ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+        <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+          How a negative integer is stored?
+        </ion-card-header>
+        <ion-card-content style="font-size: 14px">
+          Get the two’s compliment of the same positive integer.
+          <br><br> Eg: 1011 (-5) <br><br> Step 1 −<br> One’s compliment of 5 : 1010<br><br> Step 2 − <br>Add 1 to above, giving 1011, which is -5 
+        </ion-card-content>
+      </ion-card>
+      <ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+          <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+            What is a static variable?
+          </ion-card-header>
+          <ion-card-content style="font-size: 14px">
+            A static local variables retains its value between the function call and the default value is 0. The following function will print 1 2 3 if called thrice. <br><br> void f()<br> {{'{'}} <br> static int i; <br> ++i; <br> printf(“%d “,i);<br>{{'}'}} <br><br> If a global variable is static then its visibility is limited to the same source code. 
+          </ion-card-content>
+        </ion-card>
+        <ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+            <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+            What is a NULL pointer?
+          </ion-card-header>
+          <ion-card-content style="font-size: 14px">
+            A pointer pointing to nothing is called so.<br><br> Eg: char *p = NULL; 
+          </ion-card-content>
+        </ion-card>
+        <ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+            <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+            Explain the purpose of the function<br> sprintf().
+          </ion-card-header>
+          <ion-card-content style="font-size: 14px">
+            Prints the formatted output onto the character array. 
+          </ion-card-content>
+        </ion-card>
+        <ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+            <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+            When should we use the register<br> storage specifier?
+          </ion-card-header>
+          <ion-card-content style="font-size: 14px">
+            If a variable is used most frequently then it should be declared using register storage specifier, then possibly the compiler gives CPU register for its storage to speed up the look up of the variable. 
+          </ion-card-content>
+        </ion-card>
+        <ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+            <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+            S++ or S = S+1, which can be<br> recommended to increment the <br>value by 1 and why?
+          </ion-card-header>
+          <ion-card-content style="font-size: 14px">
+            S++, as it is single machine instruction (INC) internally.  
+          </ion-card-content>
+        </ion-card>
+        <ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+            <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+            What is a dangling pointer?
+          </ion-card-header>
+          <ion-card-content style="font-size: 14px">
+            A pointer initially holding valid address, but later the held address is released or freed. Then such a pointer is called as dangling pointer.           
+          </ion-card-content>
+        </ion-card>
+        <ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+            <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+            What is the purpose of the keyword <br>typedef?
+          </ion-card-header>
+          <ion-card-content style="font-size: 14px">
+            It is used to alias the existing type. Also used to simplify the complex declaration of the type. 
+          </ion-card-content>
+        </ion-card>
+        <ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+            <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+            What is lvalue and rvalue?        
+          </ion-card-header>
+          <ion-card-content style="font-size: 14px">
+            The expression appearing on right side of the assignment operator is called as rvalue. Rvalue is assigned to lvalue, which appears on left side of the assignment operator. The lvalue should designate to a variable not a constant. 
+          </ion-card-content>
+        </ion-card>
+        <ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+            <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+            Can a program be compiled without<br> main() function?        
+          </ion-card-header>
+          <ion-card-content style="font-size: 14px">
+            Yes, it can be but cannot be executed, as the execution requires main() function definition. 
+          </ion-card-content>
+        </ion-card>
+        <ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+            <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+            What is the advantage of declaring<br> void pointers?
+          </ion-card-header>
+          <ion-card-content style="font-size: 14px">
+            When we do not know what type of the memory address the pointer variable is going to hold, then we declare a void pointer for such. 
+          </ion-card-content>
+        </ion-card>
+        <ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+            <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+            Where an automatic variable is stored?
+          </ion-card-header>
+          <ion-card-content style="font-size: 14px">
+            Every local variable by default being an auto variable is stored in stack memory. 
+               </ion-card-content>
+        </ion-card>
+        <ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+            <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+            What is a self-referential structure?
+          </ion-card-header>
+          <ion-card-content style="font-size: 14px">
+            A structure containing the same structure pointer variable as its element is called as self-referential structure. 
+          </ion-card-content>
+        </ion-card>
+        <ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+            <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+            Does a built-in header file contains<br> built-in function definition?
+          </ion-card-header>
+          <ion-card-content style="font-size: 14px">
+            No, the header file only declares function. The definition is in library which is linked by the linker. 
+          </ion-card-content>
+        </ion-card>
+        <ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+            <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+            Explain modular programming.
+          </ion-card-header>
+          <ion-card-content style="font-size: 14px">
+            Dividing the program in to sub programs (modules/function) to achieve the given task is modular approach. More generic functions definition gives the ability to re-use the functions, such as built-in library functions. 
+          </ion-card-content>
+        </ion-card>
+        <ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+            <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+            What is a token?
+          </ion-card-header>
+          <ion-card-content style="font-size: 14px">
+            A C program consists of various tokens and a token is either a keyword, an identifier, a constant, a string literal, or a symbol. 
+          </ion-card-content>
+        </ion-card>
+        <ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+            <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+            What is a preprocessor?
+          </ion-card-header>
+          <ion-card-content style="font-size: 14px">
+            Preprocessor is a directive to the compiler to perform certain things before the actual compilation process begins. 
+          </ion-card-content>
+        </ion-card>
+        <ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+            <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+            Does a break is required by default case <br>in switch statement?
+          </ion-card-header>
+          <ion-card-content style="font-size: 14px">
+            Yes, if it is not appearing as the last case and if we do not want the control to flow to the following case after default if any. 
+          </ion-card-content>
+        </ion-card>
+        <ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+            <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+            Which control loop is recommended if<br> you have to execute set of statements<br> for fixed number of times?
+          </ion-card-header>
+          <ion-card-content style="font-size: 14px">
+            for – Loop. 
+          </ion-card-content>
+        </ion-card>
+        <ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+            <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+            To make pointer generic for which date<br> type it need to be declared?
+          </ion-card-header>
+          <ion-card-content style="font-size: 14px">
+            Void 
+          </ion-card-content>
+        </ion-card>
+        <ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+            <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+            Can a function return multiple values to <br>the caller using return reserved word?
+          </ion-card-header>
+          <ion-card-content style="font-size: 14px">
+            No, only one value can be returned to the caller.          
+          </ion-card-content>
+        </ion-card>
+        <ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+            <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+            What is the output file generated by<br> the linker?
+          </ion-card-header>
+          <ion-card-content style="font-size: 14px">
+            Linker generates the executable file. 
+          </ion-card-content>
+        </ion-card>
+        <ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+            <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+            How can we determine whether a file is<br> successfully opened or not <br>using fopen() function?
+          </ion-card-header>
+          <ion-card-content style="font-size: 14px">
+            On failure fopen() returns NULL, otherwise opened successfully.           
+          </ion-card-content>
+        </ion-card>
+        <ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+            <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+            What is the first string in the argument<br> vector w.r.t command line arguments?
+          </ion-card-header>
+          <ion-card-content style="font-size: 14px">
+            Program name.
+          </ion-card-content>
+        </ion-card>
+        <ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+            <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+            What is typecasting?
+          </ion-card-header>
+          <ion-card-content style="font-size: 14px">
+            Typecasting is a way to convert a variable/constant from one type to another type. 
+          </ion-card-content>
+        </ion-card>
+        <ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+            <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+            What is the purpose of #undef <br>preprocessor?
+          </ion-card-header>
+          <ion-card-content style="font-size: 14px">
+            It be used to undefine an existing macro definition. 
+          </ion-card-content>
+        </ion-card>
+        <ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+            <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+            Explain about ‘stdin’.
+          </ion-card-header>
+          <ion-card-content style="font-size: 14px">
+            stdin in a pointer variable which is by default opened for standard input device. 
+          </ion-card-content>
+        </ion-card>
+        <ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+            <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+            Name a function which can be used to<br> close the file stream.
+          </ion-card-header>
+          <ion-card-content style="font-size: 14px">
+            fclose() 
+          </ion-card-content>
+        </ion-card>
+        <ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+            <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+            Which operator can be used to access<br> union elements if union<br> variable is a pointer variable?
+          </ion-card-header>
+          <ion-card-content style="font-size: 14px">
+            Arrow (->) Operator
+          </ion-card-content>
+        </ion-card>
+        <ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+            <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+            What are valid operations on pointers?
+          </ion-card-header>
+          <ion-card-content style="font-size: 14px">
+            The only two permitted operations on pointers are  Comparision Addition/Substraction (excluding void pointers) 
+          </ion-card-content>
+        </ion-card>
+        <ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+            <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+            What is the default value of local and <br>global variables?
+          </ion-card-header>
+          <ion-card-content style="font-size: 14px">
+            Local variables get garbage value and global variables get a value 0 by default. 
+          </ion-card-content>
+        </ion-card>
+        <ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+            <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+            Can we assign a float variable to a long<br> integer variable?
+          </ion-card-header>
+          <ion-card-content style="font-size: 14px">
+            Yes, with loss of fractional part. 
+          </ion-card-content>
+        </ion-card>
+        <ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+            <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+            Which built-in function can be used to<br> move the file pointer internally?
+          </ion-card-header>
+          <ion-card-content style="font-size: 14px">
+            fseek() 
+          </ion-card-content>
+        </ion-card>
+        <ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+            <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+            What are enumerations?
+          </ion-card-header>
+          <ion-card-content style="font-size: 14px">
+            Enumerations are list of integer constants with name. Enumerators are defined with the keyword enum. 
+          </ion-card-content>
+        </ion-card>
+        <ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+            <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">        
+            Which key word is used to perform <br>unconditional branching?        
+          </ion-card-header>
+          <ion-card-content style="font-size: 14px">
+          goto
+          </ion-card-content>
+        </ion-card>
+        <ion-card class="pad" style="background-color:    rgb(44, 40, 40);color: hsla(0, 0%, 100%, 0.918)">
+            <ion-card-header style=" color: rgb(62, 184, 58);font-size: 16px">
+            What are different storage class<br> specifiers in C?
+          </ion-card-header>
+          <ion-card-content style="font-size: 14px">
+            auto, register, static, extern          
+          </ion-card-content>
+        </ion-card>
+</ion-content>
