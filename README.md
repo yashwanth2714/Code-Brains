@@ -22,4 +22,17 @@ These are some screenshots of my app
 
 ![Screenshot_20190514-211044](https://user-images.githubusercontent.com/36370530/57716218-1d48e800-7696-11e9-9641-e3cc5dfec1c4.png)
 
+![Screenshot_20190514-222137](https://user-images.githubusercontent.com/36370530/57716603-035bd500-7697-11e9-9bde-7cee7785bc23.png)
+
+![Screenshot_20190514-211055](https://user-images.githubusercontent.com/36370530/57716604-03f46b80-7697-11e9-97a2-2b409359b282.png)
+
+![Screenshot_20190514-211116](https://user-images.githubusercontent.com/36370530/57716698-2f775600-7697-11e9-9d0f-bda9c67c9f42.png)
+
+![Screenshot_20190514-211132](https://user-images.githubusercontent.com/36370530/57716701-2f775600-7697-11e9-96d6-00114f65e106.png)
+
+![Screenshot_20190514-211136](https://user-images.githubusercontent.com/36370530/57716702-300fec80-7697-11e9-9171-7a2bce3a33b0.png)
+
+![Screenshot_20190514-211159](https://user-images.githubusercontent.com/36370530/57716703-300fec80-7697-11e9-8aaa-0c9c13404f52.png)
+
+
 
