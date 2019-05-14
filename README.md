@@ -34,5 +34,6 @@ These are some screenshots of my app
 
 ![Screenshot_20190514-211159](https://user-images.githubusercontent.com/36370530/57716703-300fec80-7697-11e9-8aaa-0c9c13404f52.png)
 
+![Screenshot_20190514-211204](https://user-images.githubusercontent.com/36370530/57716869-8f6dfc80-7697-11e9-9188-0a22da449ec3.png)
 
 
