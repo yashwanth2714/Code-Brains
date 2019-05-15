@@ -1,4 +1,4 @@
-# Code-Brains
+# Freshers Interview - Ionic Project
 
 Hello Folks!! I've developed this mobile application using Ionic Framework.
 
