@@ -14,6 +14,8 @@ This app is intended for freshers.
 
 Source Code of this app is available in above repository.
 
+I used Visual Studio Code as my Code Editor. Following screenshots are some of my code snippets.
+
 These are some screenshots of my app
 
 <img src="https://user-images.githubusercontent.com/36370530/57715572-b70f9580-7694-11e9-9075-ea003c60316e.png" alt="[Screenshot_20190514-211022]" width="300" align="left">
@@ -47,4 +49,3 @@ These are some screenshots of my app
 <img src="https://user-images.githubusercontent.com/36370530/57716869-8f6dfc80-7697-11e9-9188-0a22da449ec3.png" alt="[Screenshot_20190514-211204]" width="300" align="right">
 
 
-I used Visual Studio Code as my Code Editor. Following screenshots are some of my code snippets.
