@@ -19,7 +19,7 @@ I used Visual Studio Code as my Code Editor. Following screenshots are some of m
 ![code](https://user-images.githubusercontent.com/36370530/57754951-422c7200-770d-11e9-9311-c4e234ca7a3a.png)
 ![code1](https://user-images.githubusercontent.com/36370530/57754972-4e183400-770d-11e9-8bf1-7ff665166d4f.png)
 ![code2](https://user-images.githubusercontent.com/36370530/57754976-51132480-770d-11e9-9dc1-cdb3f7b90cdc.png)
-![code4](https://user-images.githubusercontent.com/36370530/57755001-612b0400-770d-11e9-926d-6718ee6fca30.png)
+
 
 
 These are some screenshots of my app
