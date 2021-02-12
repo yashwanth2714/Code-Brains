@@ -1,6 +1,6 @@
 # Freshers Interview - Ionic Project
 
-Hello Folks!! I've developed this mobile application using Ionic Framework.
+I developed this mobile application using Ionic Framework.
 
 This app is intended for freshers.
 
