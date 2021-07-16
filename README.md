@@ -3,7 +3,7 @@
 
 This app is intended for freshers.
 
-<b>Features Of This App Includes</b><br><br>
+<b>This app provides:</b><br><br>
 ---- Technical Interview Questions And Answers<br>
 ---- Group Discussion Tips<br>
 ---- HR Question And Answers<br>
@@ -11,7 +11,7 @@ This app is intended for freshers.
 ---- Body Language Tips<br>
 ---- Interview Mistakes
 
-These are some screenshots of my app:
+These are some screenshots of the app:
 
 <img src="https://user-images.githubusercontent.com/36370530/57715572-b70f9580-7694-11e9-9075-ea003c60316e.png" alt="[Screenshot_20190514-211022]" width="300" align="left">
 
