@@ -1,6 +1,5 @@
 # Freshers Interview - Ionic Project
 
-I developed this mobile application using Ionic Framework.
 
 This app is intended for freshers.
 
@@ -12,10 +11,7 @@ This app is intended for freshers.
 ---- Body Language Tips<br>
 ---- Interview Mistakes
 
-
-I used Visual Studio Code as my Code Editor. 
-
-These are some screenshots of my app
+These are some screenshots of my app:
 
 <img src="https://user-images.githubusercontent.com/36370530/57715572-b70f9580-7694-11e9-9075-ea003c60316e.png" alt="[Screenshot_20190514-211022]" width="300" align="left">
 
