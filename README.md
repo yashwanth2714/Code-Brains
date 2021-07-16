@@ -1,4 +1,4 @@
-<h1 align=center>Fresher's Interview - Ionic Project</h1>
+<h1 align=center>Freshers Interview - Ionic Project</h1>
 
 
 <b>This app provides:</b><br><br>
