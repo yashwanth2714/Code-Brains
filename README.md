@@ -1,8 +1,6 @@
 # Freshers Interview - Ionic Project
 
 
-This app is intended for freshers.
-
 <b>This app provides:</b><br><br>
 ---- Technical Interview Questions And Answers<br>
 ---- Group Discussion Tips<br>
